@@ -1,0 +1,35 @@
+#questinMark
+
+{
+  color: #c4ced1;
+  background-color: #091d3a;
+  font-size: 1rem;
+  font-weight: normal;
+  border: 1px solid #091d3a;
+  padding: 2px 6px;
+  margin: 0px 4px;
+  text-decoration: none;
+}
+
+#linReact #linPopup,
+#cSharpReact #cSharpPopup,
+#linWebReact #linWebPopup,
+#jsPackReact #jsPackPopup
+
+{
+display: none;
+}
+
+#linReact:hover #linPopup,
+#cSharpReact:hover #cSharpPopup,
+#linWebReact:hover #linWebPopup,
+#jsPackReact:hover #jsPackPopup
+
+{
+background-color: #dbcfc3;
+border: 1px solid #091d3a;
+width: 35rem;
+color: black;
+padding: 1rem 1rem;
+display: block;
+}

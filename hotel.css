@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: URL('OpenSans-Regular.ttf') format('truetype');
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-family: OpenSans;
+}
+
+#sitenav {
+height: auto;
+flex-direction: row;
+background-color:    #c4ced1;
+padding: 10px 0px;
+}
+
+#roomsbody {
+height: auto;
+width: auto;
+background-color: #c4ced1;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+#menu_outer {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+padding: 10px 0px;
+}
+
+#top {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+background-color:  #0f1111 ;
+}
+
+#main {
+width: 50rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+background-color: #c4ced1;
+padding: 30px;
+}
+
+#links {
+  width: 12rem;
+}
+
+
+#buttons {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+padding: 0px 0px;
+}
+
+#headdy {
+align-items: center;
+justify-content: center;
+padding: 10px 10px;
+background-color:  #0f1111 ;
+}
+
+#head1 {
+width: 65.7rem;
+align-items: center;
+justify-content: center;
+  background-color: #c4ced1;
+}
+
+body {
+  background-color: #0f1111;
+}
+
+#menuBtn {
+width: fit-content;
+font-size: 14px;
+height: 2rem;
+border: 1px solid #dbcfc3;
+align-items: center;
+justify-content: center;
+background-color: #091d3a;
+color: white;
+border: 0px;
+}
+
+#menuBtn:hover {
+background-color: #dbcfc3;
+color: #091d3a;
+border: 1px solid #091d3a;
+}
+
+.menuLink {
+color: #c4ced1;
+background-color: #091d3a;
+font-size: 1rem;
+font-weight: normal;
+border: 1px solid #091d3a;
+padding: 2px 6px;
+margin: 0px 4px;
+text-decoration: none;
+
+}
+.menuLink:hover {
+  background-color: #c4ced1;
+  color: #091d3a;
+  border: 1px solid #091d3a;
+  text-decoration: none;
+}
+.menulink:visited {
+  color: black;
+}
