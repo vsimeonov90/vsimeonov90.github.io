@@ -53,7 +53,7 @@ switch (lang) {
     break;
 
   case 'BG':
-    menuBtn.textContent = 'Портфолио';
+    menuBtn.textContent = 'Портфолио111';
     mainLink.textContent = 'Начало';
     bioLink.textContent = 'Повече за мен';
     skillsLink.textContent = 'Моите умения';
