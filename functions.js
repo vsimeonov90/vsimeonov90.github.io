@@ -1,16 +1,21 @@
+function hideMenu() {
+  if (menuElement.getAttribute('style') === 'display:flex;') {
+  menuElement.setAttribute('style','display:none;');
+  }
+}
 function printBioHandler() {
-menuElement.setAttribute('style','display:none;');
+hideMenu();
 printBio();
 }
 
 function printSkillsHandler() {
-menuElement.setAttribute('style','display:none;');
-printSkills();
+  hideMenu();
+  printSkills();
 }
 
 function printMainHandler() {
-menuElement.setAttribute('style','display:none;');
-printMain();
+  hideMenu();
+  printMain();
 }
 
 function setBG() {
@@ -54,5 +59,13 @@ function menu() {
     menuElement.setAttribute('style','display:none;');
     // roomsElement.setAttribute('style','display:flex;');
   }*/
+}
+
+function printAccr() {
+    hideMenu();
+  roomsElement.innerHTML = `<h3>${accrTitle}</h3>`;
+  for (let element of accr) {
+    roomsElement.innerHTML += `<span>${element}</span><br />`;
+  }
 }
 

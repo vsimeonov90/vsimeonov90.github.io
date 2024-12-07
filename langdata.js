@@ -2,6 +2,7 @@ switch (lang) {
 
   case 'EN':
     menuBtn.textContent = 'My Portfolio';
+    accrBtn.textContent = 'Accreditation';
     mainLink.textContent = 'Home';
     bioLink.textContent = 'Who am I?';
     skillsLink.textContent = 'My skills';
@@ -10,6 +11,9 @@ switch (lang) {
     greetMsg = 'Welcome';
     bioTitle = 'The lonesome road of a simple tech enthusiast';
     skillTitle = 'What I may be of use with?';
+    accrTitle = 'My academic accomplishments in programming:';
+    headTitle = 'Demonstrative Website Portfolio',
+    headSubTitle = 'By Viktor I. Simeonov',
 
     skillSet.lin = 'Extensive knowledge of Linux work environment.';
     skillSet.cSharp = 'Basic knowledge in C#';
@@ -29,7 +33,7 @@ switch (lang) {
     - Working under Linux with <b>dotnet</b> package: code compiling and execution.<br />`;
 
     moreInfo.linWeb = `- Installing, setting up and running <b>Apache HTTPD</b> web server on  Linux.<br />
-    - <b>HTTPS</b> setup <b>Let's encrypt</b> and <b>certbot</b> for automatic key updates.<br />
+    - <b>HTTPS</b> setup with <b>Let's encrypt</b> and <b>certbot</b> for automatic key updates.<br />
     - Installing and running <b>MariaDB (MySQL)</b> DB server under Linux.<br />`;
 
     moreInfo.jsPack = `- Extensive knowledge in <b>JavaScript</b> front-end package for creating dymanic, interactive pages.<br />
@@ -47,13 +51,27 @@ switch (lang) {
       'The following 3 years I spent learning "Wireless comms and broadcasting" in the "College of Telecommunications and Post" for my professional bachelor\'s degree. Along with other interesting stuff, I was officially introduced to C programming there.<br />',
       'After that, a long pause in this career. I had my reasons, but the details of this long interruption are irrelevant now. In 2024, I passed SoftUni.bg\'s "Programming Basics with C#" course with max score.<br />',
       'As of now, I am actively learning and continuing my programming to Advanced modules. I am taking advanced JavaScript courses in Udemy as I write this bio, and this website was done using a lot of the information from these courses actually.<br />',
-      'I am determined to continue working in the field of fullstack development, as I have yet to learn back-end programming in JS(Node.js and other various frameworks), and new databases(mainly MongoDB, as I already have a little experience working with SQL). I plan on keeping my skills always fresh and top-tier for the future, in the ever-evolving world of programming.',
+      'I am determined to continue working in the field of fullstack development, as I have yet to learn back-end programming in JS(Node.js and other various frameworks), and new databases(mainly MongoDB, as I already have a little experience working with SQL). I plan on keeping my skills always fresh and top-tier for the future, in the ever-evolving world of programming.'
     ];
 
+    main = [
+      'Hi there! My name\'s Viktor Simeonov and I\'m a "young" programmer.<br />',
+      'I present to anyone who might be interested, this little website, which is also kind of my portfolio.',
+      'This website has the purpose of presenting you with a dynamic and interactive browsing environment, thanks to the integration of JavaScript and CSS, along with HTML.<br />',
+      'Although design isn\'t my strong suite, I hope that you remain satisfied with the overall look.<br />',
+      'All documents for this website will be available on GitHub so anyone can take a look at the code.'
+    ];
+
+    accr = [
+      'As of now, I have successfully completed the following accredited online courses in programming:<br />',
+      '<a class="pageLink" href="https://softuni.bg/certificates/details/209890/a51ab051" target="_blank">Programming Basics with C#</a> - by SoftUni.bg',
+      '<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - by Microsoft and freeCodeCamp'
+    ];
     break;
 
   case 'BG':
-    menuBtn.textContent = 'Портфолио111';
+    menuBtn.textContent = 'Портфолио';
+    accrBtn.textContent = 'Акредитации';
     mainLink.textContent = 'Начало';
     bioLink.textContent = 'Повече за мен';
     skillsLink.textContent = 'Моите умения';
@@ -62,6 +80,9 @@ switch (lang) {
     greetMsg = 'Добре дошли!';
     bioTitle = 'Самотният път на един любител на технологии';
     skillTitle = 'С какво бих могъл да съм полезен към момента?';
+    accrTitle = 'Моите академични постижения в програмирането:';
+    headTitle = 'Портфолио с демонстративен уебсайт',
+    headSubTitle = 'от Виктор И. Симеонов',
 
     skillSet.lin = 'Подробни знания за работата в Linux среда.';
     skillSet.cSharp = 'Базови познания по C#';
@@ -103,10 +124,17 @@ switch (lang) {
     ];
 
     main = [
-      'Казвам се Виктор Симеонов и съм „млад“ програмист!<br />',
+      'Привет! Казвам се Виктор Симеонов и съм „млад“ програмист!<br />',
       'Представям на Вашето внимание този малък уебсайт, който преставлява фактически и моето портфолио.',
-      'Едва ли този малък проект ще може да обхване всички специфики на front-end програмирането, но ще се опитам да вкарам в него максимална динамика и интерактивност!<br />',
-      'Всички документи на сайта ще бъдат достъпни в GitHub заедно с целия програмен код, за да можете да ги разгледате.',
+      'Сайтът има за цел, разглеждайки го, да Ви представи интерактивна и динамична среда, благодарение на интеграцията с JavaScript и CSS.<br />',
+      'Макар и дизайнът да не е силната ми страна, надявам се, съм се постарал страницата да изглежда прилично и общият изглед да Ви хареса.<br />',
+      'Всички документи на сайта ще бъдат достъпни в GitHub заедно с целия програмен код, за да можете да ги разгледате.'
+    ];
+
+    accr = [
+      'Към момента, съм преминал успешно следните акредитирани курсове по програмиране:<br />',
+      '<a class="pageLink" href="https://softuni.bg/certificates/details/209890/a51ab051" target="_blank">Programming Basics with C#</a> - от SoftUni.bg',
+      '<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - от Microsoft и freeCodeCamp'
     ];
     break;
 

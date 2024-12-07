@@ -26,9 +26,9 @@ display: none;
 #jsPackReact:hover #jsPackPopup
 
 {
-background-color: #dbcfc3;
+background-color: #ffffff;
 border: 1px solid #091d3a;
-width: 35rem;
+width: auto;
 color: black;
 padding: 1rem 1rem;
 display: block;

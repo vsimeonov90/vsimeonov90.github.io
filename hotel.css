@@ -9,17 +9,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 #sitenav {
 height: auto;
 flex-direction: row;
-background-color:    #c4ced1;
+background-color:    #f2f2f2;
 padding: 10px 0px;
+font-size: 1rem;
 }
 
 #roomsbody {
 height: auto;
 width: auto;
-background-color: #c4ced1;
+background-color: #f2f2f2;
 align-items: center;
 justify-content: flex-start;
 flex-direction: column;
+font-size: 1rem;
 }
 
 #menu_outer {
@@ -44,18 +46,26 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: center;
-background-color: #c4ced1;
+background-color: #f2f2f2;
 padding: 30px;
 }
 
 #links {
-  width: 12rem;
+  width: 10.8rem;
+  flex-direction: column;
+  background-color: #091d3a;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+
 }
 
 
 #buttons {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: flex-start;
 justify-content: flex-start;
 padding: 0px 0px;
@@ -64,41 +74,43 @@ padding: 0px 0px;
 #headdy {
 align-items: center;
 justify-content: center;
-padding: 10px 10px;
+padding: 0px 10px;
 background-color:  #0f1111 ;
 }
 
 #head1 {
 width: 65.7rem;
-align-items: center;
-justify-content: center;
-  background-color: #c4ced1;
+  background-color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+
 }
 
 body {
   background-color: #0f1111;
 }
 
-#menuBtn {
+#menuBtn, #accrBtn {
 width: fit-content;
-font-size: 14px;
+font-size: 1rem;
 height: 2rem;
 border: 1px solid #dbcfc3;
 align-items: center;
 justify-content: center;
 background-color: #091d3a;
 color: white;
-border: 0px;
+border: 1px solid #091d3a;
+margin: 0px 4px;
 }
 
-#menuBtn:hover {
+#menuBtn:hover, #accrBtn:hover {
 background-color: #dbcfc3;
 color: #091d3a;
 border: 1px solid #091d3a;
 }
 
 .menuLink {
-color: #c4ced1;
+color: #f2f2f2;
 background-color: #091d3a;
 font-size: 1rem;
 font-weight: normal;
@@ -109,11 +121,40 @@ text-decoration: none;
 
 }
 .menuLink:hover {
-  background-color: #c4ced1;
+  background-color: #f2f2f2;
   color: #091d3a;
   border: 1px solid #091d3a;
   text-decoration: none;
 }
 .menulink:visited {
   color: black;
+}
+
+.sideLink {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+
+}
+.sideLink:hover {
+  text-decoration: underline;
+}
+.sideLink:visited {
+  color: white;
+}
+
+.pageLink:link {
+  color: #091d3a;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+
+}
+.pageLink:visited {
+  color: #091d3a;
+}
+.pageLink:hover {
+  color: #f92104;
+  text-decoration: underline;
 }
