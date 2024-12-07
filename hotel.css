@@ -145,16 +145,16 @@ text-decoration: none;
 }
 
 .pageLink:link {
-  color: #091d3a;
+  color: #f92104;
   font-size: 0.9rem;
   font-weight: normal;
   text-decoration: none;
 
 }
 .pageLink:visited {
-  color: #091d3a;
+  color: #f92104;
 }
 .pageLink:hover {
-  color: #f92104;
-  text-decoration: underline;
+  color: #091d3a;
+  text-decoration: none;
 }
