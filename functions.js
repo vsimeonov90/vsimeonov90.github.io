@@ -45,7 +45,7 @@ function printSkills() {
       roomsElement.innerHTML = `<h3>${skillTitle}</h3>`;
   for (let element in skillSet) {
       const elementPop = `${element}Popup`;
-      roomsElement.innerHTML += `🗸 ${skillSet[element]} <span id="${element}React"><span id="questinMark">?</span>
+      roomsElement.innerHTML += `<span style="font-family: Pictograms;">%</span> ${skillSet[element]} <span id="${element}React"><span id="questinMark">?</span>
       <span id="${elementPop}">${moreInfo[element]}</span><br /></span>`;
   }
 }

@@ -19,6 +19,10 @@
   font-family: 'OpenSans';
   src: URL('OpenSans-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Pictograms';
+  src: URL('modernpics.otf') format('opentype');
+}
 
 body {
   background-color: #0f1111;
