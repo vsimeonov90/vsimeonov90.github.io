@@ -1,0 +1,154 @@
+@media only screen and (min-width: 1024px) {
+  #sidepanel {
+  display:   block;
+  }
+  #bottompanel {
+    display: none;
+  }
+}
+@media only screen and (max-width: 790px) {
+  #sidepanel {
+  display:   none;
+  }
+  #bottompanel {
+  display: block;
+  }
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: URL('OpenSans-Regular.ttf') format('truetype');
+}
+
+body {
+  background-color: #0f1111;
+  margin: 0px;
+  font-family: OpenSans;
+}
+
+#header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+  background-color: #ffffff;
+  margin: 0px;
+  width: 100%;
+  height: 32px;
+}
+
+#headerBanner, #headerContent
+{
+  display: block;
+}
+#headerBanner:hover
+{
+  background-color: rgba(0,0,0,0.5);
+  color: #ffffff;
+  cursor: default;
+}
+
+#headerBanner
+{
+  background-color: black;
+  height: 32px;
+  text-align: center;
+line-height: 32px;
+  width: 20%;
+  color: #ffffff;
+  cursor: default;
+}
+#headerContent{
+  padding: 0px 10px;
+}
+
+#sitenav {
+position: fixed; /* Sit on top of the page content */
+flex-direction: column;
+width: fit-content; /* Full width (cover the whole page) */
+height: fit-content; /* Full height (cover the whole page) */
+top: flex-start;
+left: flex-start;
+right: flex-end;
+bottom: flex-end;
+background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+cursor: default; /* Add a pointer on hover */
+padding: 6px 0px;
+}
+
+#main
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+#viewport
+{
+  display: block;
+  background-color: #f2f2f2;
+  width: 80%;
+  height:  inherit;
+  padding-top: 0rem;
+  padding-left: 2rem; padding-right: 2rem; padding-bottom: 2rem;
+  text-align: justify;
+  border-top: 1px solid #cccccc;
+
+}
+#sidepanel, #bottompanel
+{
+  background-color: white;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+
+  width: 20%;
+  height: inherit;
+  text-align: right;
+  padding: 6px 8px;
+}
+
+.menuLink, .menuLink:visited {
+  color: #f2f2f2;
+  width: auto;
+  font-size: 0.8rem;
+  font-weight: normal;
+  padding: 2px 6px;
+  margin: 0px 4px;
+  text-decoration: none;
+}
+
+.menuLink:hover {
+  background-color: #f2f2f2;
+  color: #091d3a;
+  text-decoration: none;
+}
+
+.sideLink, .sideLink:visited {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.sideLink:hover {
+  text-decoration: underline;
+}
+
+.pageLink, .pageLink:visited {
+  color: #f92104;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.pageLink:active, .pageLink:hover {
+  color: #091d3a;
+  text-decoration: none;
+}
+.sideLink, .menuLink, .pageLink
+{
+  cursor: default;
+}
+

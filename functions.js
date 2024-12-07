@@ -19,13 +19,18 @@ function printMainHandler() {
   printMain();
 }
 
+function reloadMain()
+{
+  window.location.replace('index.html');
+}
+
 function langToggle() {
   if (lang === 'EN') {
   localStorage.setItem('lang','BG');
   window.location.reload();
   } else if (lang === 'BG') {
     localStorage.setItem('lang', 'EN');
-    window.location.reload();
+    reloadMain();
   }
 }
 
@@ -56,10 +61,7 @@ function menu() {
   if (menuElement.getAttribute('style') === 'display:none;') {
     menuElement.setAttribute('style','display:flex;');
     // roomsElement.setAttribute('style','display:none;');
-  } /*else {
-    menuElement.setAttribute('style','display:none;');
-    // roomsElement.setAttribute('style','display:flex;');
-  }*/
+  }
 }
 
 function printAccr() {

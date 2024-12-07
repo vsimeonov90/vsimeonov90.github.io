@@ -13,7 +13,7 @@ switch (lang) {
     bioTitle = 'The lonesome road of a simple tech enthusiast';
     skillTitle = 'What I may be of use with?';
     accrTitle = 'My academic accomplishments in programming:';
-    headTitle = 'Demonstrative Website Portfolio',
+    headTitle = 'Viktor Simeonov\'s Demo',
     headSubTitle = 'By Viktor I. Simeonov',
     contactTitle = 'How can you reach me?',
 
@@ -90,7 +90,7 @@ switch (lang) {
     bioTitle = 'Самотният път на един любител на технологии';
     skillTitle = 'С какво бих могъл да съм полезен към момента?';
     accrTitle = 'Моите академични постижения в програмирането:';
-    headTitle = 'Портфолио с демонстративен уебсайт',
+    headTitle = 'Демо от Виктор Симеонов',
     headSubTitle = 'от Виктор И. Симеонов',
     contactTitle = 'Как да се свържете с мен?',
 
