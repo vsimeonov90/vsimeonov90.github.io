@@ -14,6 +14,7 @@ switch (lang) {
     accrTitle = 'My academic accomplishments in programming:';
     headTitle = 'Demonstrative Website Portfolio',
     headSubTitle = 'By Viktor I. Simeonov',
+    contactTitle = 'How can you reach me?',
 
     skillSet.lin = 'Extensive knowledge of Linux work environment.';
     skillSet.cSharp = 'Basic knowledge in C#';
@@ -67,6 +68,12 @@ switch (lang) {
       '<a class="pageLink" href="https://softuni.bg/certificates/details/209890/a51ab051" target="_blank">Programming Basics with C#</a> - by SoftUni.bg',
       '<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - by Microsoft and freeCodeCamp'
     ];
+
+    contactInfo = [
+      'You can find me on my email address(es):',
+      '<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a><br /><a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a><br />',
+      'Or, on <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Facebook & Messenger.</a>'
+    ];
     break;
 
   case 'BG':
@@ -83,6 +90,7 @@ switch (lang) {
     accrTitle = 'Моите академични постижения в програмирането:';
     headTitle = 'Портфолио с демонстративен уебсайт',
     headSubTitle = 'от Виктор И. Симеонов',
+    contactTitle = 'Как да се свържете с мен?',
 
     skillSet.lin = 'Подробни знания за работата в Linux среда.';
     skillSet.cSharp = 'Базови познания по C#';
@@ -135,6 +143,12 @@ switch (lang) {
       'Към момента, съм преминал успешно следните акредитирани курсове по програмиране:<br />',
       '<a class="pageLink" href="https://softuni.bg/certificates/details/209890/a51ab051" target="_blank">Programming Basics with C#</a> - от SoftUni.bg',
       '<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - от Microsoft и freeCodeCamp'
+    ];
+
+    contactInfo = [
+      'Можете да ме намерите на имейл адрес(и):',
+      '<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a><br /><a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a><br />',
+      'Също така и във <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Фейсбук и Messenger.</a>'
     ];
     break;
 

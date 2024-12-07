@@ -69,3 +69,11 @@ function printAccr() {
   }
 }
 
+function printContact() {
+  hideMenu();
+  roomsElement.innerHTML = `<h3>${contactTitle}</h3>`;
+  for (let element of contactInfo) {
+    roomsElement.innerHTML += `<span>${element}</span><br />`;
+  }
+}
+

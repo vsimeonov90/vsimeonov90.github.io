@@ -14,3 +14,4 @@
   bioLink.addEventListener('click', printBioHandler);
   skillsLink.addEventListener('click', printSkillsHandler);
   mainLink.addEventListener('click', printMainHandler);
+  contactLink.addEventListener('click', printContact);
