@@ -7,6 +7,7 @@ switch (lang) {
     bioLink.textContent = 'Who am I?';
     skillsLink.textContent = 'My skills';
     contactLink.textContent = 'Contact';
+    langTitle = 'Български';
 
     greetMsg = 'Welcome';
     bioTitle = 'The lonesome road of a simple tech enthusiast';
@@ -83,6 +84,7 @@ switch (lang) {
     bioLink.textContent = 'Повече за мен';
     skillsLink.textContent = 'Моите умения';
     contactLink.textContent = 'Връзка с мен';
+    langTitle = 'English';
 
     greetMsg = 'Добре дошли!';
     bioTitle = 'Самотният път на един любител на технологии';

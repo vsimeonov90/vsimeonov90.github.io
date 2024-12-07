@@ -3,6 +3,7 @@ function hideMenu() {
   menuElement.setAttribute('style','display:none;');
   }
 }
+
 function printBioHandler() {
 hideMenu();
 printBio();
@@ -18,14 +19,14 @@ function printMainHandler() {
   printMain();
 }
 
-function setBG() {
+function langToggle() {
+  if (lang === 'EN') {
   localStorage.setItem('lang','BG');
   window.location.reload();
-}
-
-function setEN() {
-  localStorage.setItem('lang','EN');
-  window.location.reload();
+  } else if (lang === 'BG') {
+    localStorage.setItem('lang', 'EN');
+    window.location.reload();
+  }
 }
 
 function printBio() {
