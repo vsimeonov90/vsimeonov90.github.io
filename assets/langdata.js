@@ -89,8 +89,7 @@ switch (lang) {
     todo = [
       `- Add a section for publishing questions and recommendations.`,
       `- Add a news/updates section where I post what updates I've made to the site.`,
-      `* These features would require some sort of backend to save the public posts. Since GitHub doesn't provide backend frameworks, I'll have to look for a provider online.${n}`,
-      `- Redo skills section for better readability on mobile devices.`
+      `* These features would require some sort of backend to save the public posts. Since GitHub doesn't provide backend frameworks, I'll have to look for a provider online.${n}`
     ];
     break;
 
@@ -188,8 +187,7 @@ switch (lang) {
       todo = [
         `- Секция за публикуване на въпроси и съвети.`,
         `- Секция с новини по новите неща, които добавям към сайта.`,
-        `* Тези добавки ще изискват някаква форма на back-end, за да запазват публикациите. GitHub не предоставя backend, затова ще трябва да потърся някой провайдър с backend.${n}`,
-        `- Да преработя секцията с уменията за по-четим изглед на мобилни у-ва.`
+        `* Тези добавки ще изискват някаква форма на back-end, за да запазват публикациите. GitHub не предоставя backend, затова ще трябва да потърся някой провайдър с backend.${n}`
       ];
       break;
 
