@@ -15,6 +15,8 @@
   }
   #sitenav {
   top: 28px;
+  font-size: 100%;
+  align-items: center;
   }
   #headerBanner {
   width: 20%;
@@ -51,14 +53,15 @@
   #sitenav {
   top: 40px;
   left: -118px;
-  align-items: flex-end;
+  align-items: center;
+  font-size: 110%;
   }
   #headerBanner {
   width: fit-content;
   padding: 0px 10px;
   }
   #main {
-  min-height: 85vh;
+  min-height: 82vh;
   }
   body {
     font-size: 14px;

@@ -50,7 +50,6 @@ background-color: rgba(0,0,0,0.5); /* Black background with opacity */
 z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 cursor: default; /* Add a pointer on hover */
 padding: 6px 0px;
-font-size: 95%;
 }
 
 #main
@@ -92,9 +91,8 @@ font-size: 95%;
   border-top: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
-
+text-align: center;
   height: inherit;
-  text-align: left;
   padding: 6px 8px;
   margin: 24px 16px;
   font-size: 85%;
@@ -112,17 +110,19 @@ font-size: 95%;
 .menuLink:hover {
   background-color: #f2f2f2;
   color: #091d3a;
+  cursor: default;
   text-decoration: none;
 }
 
 .sideLink, .sideLink:visited {
-  color: white;
+  color: black;
   font-weight: normal;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .sideLink:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .pageLink, .pageLink:visited {
@@ -134,9 +134,7 @@ font-size: 95%;
 .pageLink:active, .pageLink:hover {
   color: #091d3a;
   text-decoration: none;
+  cursor: pointer;
 }
-.sideLink, .menuLink, .pageLink
-{
-  cursor: default;
-}
+
 

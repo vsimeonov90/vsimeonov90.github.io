@@ -11,6 +11,10 @@
   text-decoration: none;
 }
 
+#questinMark:hover {
+cursor: pointer;
+}
+
 #linReact #linPopup,
 #cSharpReact #cSharpPopup,
 #linWebReact #linWebPopup,

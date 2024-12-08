@@ -4,21 +4,6 @@ function hideMenu() {
   }
 }
 
-function printBioHandler() {
-hideMenu();
-printBio();
-}
-
-function printSkillsHandler() {
-  hideMenu();
-  printSkills();
-}
-
-function printMainHandler() {
-  hideMenu();
-  printMain();
-}
-
 function reloadMain()
 {
   window.location.replace('index.html');
@@ -30,7 +15,7 @@ function langToggle() {
   window.location.reload();
   } else if (lang === 'BG') {
     localStorage.setItem('lang', 'EN');
-    reloadMain();
+    window.location.reload();
   }
 }
 
@@ -45,7 +30,7 @@ function printSkills() {
       roomsElement.innerHTML = `<h3>${skillTitle}</h3>`;
   for (let element in skillSet) {
       const elementPop = `${element}Popup`;
-      roomsElement.innerHTML += `${arrowTick} ${skillSet[element]} <span id="${element}React"><span id="questinMark">?</span>
+      roomsElement.innerHTML += `${a} ${skillSet[element]} <span id="${element}React"><span id="questinMark">?</span>
       <span id="${elementPop}">${moreInfo[element]}</span><br /></span>`;
   }
 }
@@ -77,6 +62,30 @@ function printContact() {
   roomsElement.innerHTML = `<h3>${contactTitle}</h3>`;
   for (let element of contactInfo) {
     roomsElement.innerHTML += `<span>${element}</span><br />`;
+  }
+}
+
+function getParams() {
+  let qString = window.location.search;
+  console.log(qString);
+  let urlParams = new URLSearchParams(qString);
+  let page = urlParams.get('p');
+  console.log(page);
+  switch (page) {
+    case 'bio':
+      printBio();
+      break;
+    case 'skills':
+      printSkills();
+      break;
+    case 'contact':
+      printContact();
+      break;
+    case 'accr':
+      printAccr();
+      break;
+    default:
+      break;
   }
 }
 
