@@ -11,6 +11,9 @@
   #bottompanel {
   display: none;
   }
+  #sitenav {
+  top: 28px;
+  }
   body {
     font-size: 16px;
   }
@@ -35,8 +38,9 @@
   width: 100%;
   }
   #sitenav {
-  top: 32px;
-  left: -10%;
+  top: 40px;
+  left: -118px;
+  align-items: flex-end;
   }
   body {
     font-size: 14px;

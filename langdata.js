@@ -84,7 +84,7 @@ switch (lang) {
     menuBtn.textContent = 'Портфолио';
     accrBtn.textContent = 'Акредитации';
     mainLink.textContent = 'Начало';
-    bioLink.textContent = 'Повече за мен';
+    bioLink.textContent = 'Биография';
     skillsLink.textContent = 'Моите умения';
     contactLink.textContent = 'Връзка с мен';
     langTitle = 'English';

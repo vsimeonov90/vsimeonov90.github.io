@@ -44,9 +44,9 @@ line-height: 32px;
 #sitenav {
 position: absolute; /* Sit on top of the page content */
 flex-direction: column;
-width: fit-content; /* Full width (cover the whole page) */
+justify-content: center;
+width: 128px; /* Full width (cover the whole page) */
 height: fit-content; /* Full height (cover the whole page) */
-top: 28px;
 background-color: rgba(0,0,0,0.5); /* Black background with opacity */
 z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 cursor: default; /* Add a pointer on hover */
