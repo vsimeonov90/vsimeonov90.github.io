@@ -1,9 +1,11 @@
 @media only screen and (min-width: 691px) {
   #viewport {
   width: 80%;
+  margin-right: 16px;
   }
   #sidepanel {
   display:   block;
+  margin-left: 16px;
   }
   #menuBtnMobile, #accrBtnMobile, #langLinkMobile {
   display: none;
@@ -16,6 +18,9 @@
   }
   #headerBanner {
   width: 20%;
+  }
+  #main {
+  min-height: 94vh;
   }
   body {
     font-size: 16px;
@@ -40,6 +45,8 @@
   }
   #viewport {
   width: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
   }
   #sitenav {
   top: 40px;
@@ -49,6 +56,9 @@
   #headerBanner {
   width: fit-content;
   padding: 0px 10px;
+  }
+  #main {
+  min-height: 85vh;
   }
   body {
     font-size: 14px;
@@ -62,4 +72,11 @@
 @font-face {
   font-family: 'Pictograms';
   src: URL('modernpics.otf') format('opentype');
+}
+
+html {
+  height:100%;
+}
+body {
+  min-height:100%;
 }
