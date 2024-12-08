@@ -29,7 +29,7 @@
   }
   #bottompanel {
   display: block;
-  width: 100%;
+  width: inherit;
   }
   #menuBtn, #accrBtn, #langLink {
   display: none;
