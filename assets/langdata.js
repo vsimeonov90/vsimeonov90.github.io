@@ -65,8 +65,8 @@ switch (lang) {
         `This website has the purpose of presenting you with a dynamic and interactive browsing environment, thanks to the integration of JavaScript and CSS, along with HTML.${n}`,
       `Although design isn\'t my strong suite, I hope that you remain satisfied with the overall look.${n}`,
       `All documents for this website will be available on GitHub so anyone can take a look at the code.${n}`,
-`Навигацията в сайта се състои от 3 главни бутона и 1 падащо меню, написани с JavaScript, които правят препратките с URL параметър, освен бутона за език, който е динамичен и променя езика в реално време, без да се налага да презареждате страницата.${n}`,
-`Бутонът за език прави браузъра ви "умен", като запазва Вашият избор в localStorage и така сайтът остава винаги на избрания от Вас език, докато не изчистите историята на браузъра си.`,
+`The navigation in the website consists of 3 buttons, 2 of which are scripted to send a URL parameter, and then the JS dynamically loads the requested content on the main page. There is 1 drop-down menu, scripted with URL parameters as well, keeping the UI clean and minimal.${n}`,
+`The language button takes advantage of the <b>localStorage</b> method, making your browser remember your preference for  later use.`,
     ];
 
     accr = [
