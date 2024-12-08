@@ -2,6 +2,9 @@
   #sidepanel {
   display:   block;
   }
+  #menuBtnMobile, #accrBtnMobile, #langLinkMobile {
+    display: none;
+  }
   #bottompanel {
     display: none;
   }
@@ -12,6 +15,13 @@
   }
   #bottompanel {
   display: block;
+  }
+  #menuBtn, #accrBtn, #langLink {
+  display: none;
+  }
+  #menuBtnMobile, #accrBtnMobile, #langLinkMobile {
+  display: block;
+  font-size: 24px;
   }
 }
 

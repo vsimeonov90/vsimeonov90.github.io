@@ -22,25 +22,28 @@ switch (lang) {
     skillSet.linWeb = 'Working with WEB services under Linux.';
     skillSet.jsPack = 'JavaScript WEB package.';
 
-    moreInfo.lin =  `- Installation and support of Linux-based OS.<br />
-    - <b>bash</b> scripting and task automation.<br />
-    - Setting up <b>systemd</b> and <b>runit</b> services.<br  />
-    - Setting up <b>ufw</b>.<br />
-    - Setting up <b>samba</b> for local file sharing.<br />
-    - Installation and setup of Xorg and DEs/WMs.<br />
-    - Practical experience under <b>Debian, Voidlinux, Slackware</b>.<br />
-    - Remote control/access - <b>SSH</b> and <b>(S)FTP</b><br />`;
+    moreInfo.lin =  `${normalTick} Installation and support of Linux-based OS.<br />
+    ${normalTick} <b>bash</b> scripting and task automation.<br />
+    ${normalTick} Setting up <b>systemd</b> and <b>runit</b> services.<br  />
+    ${normalTick} Setting up <b>ufw</b>.<br />
+    ${normalTick} Setting up <b>samba</b> for local file sharing.<br />
+    ${normalTick} Installation and setup of Xorg and DEs/WMs.<br />
+    ${normalTick} Practical experience under <b>Debian, Voidlinux, Slackware</b>.<br />
+    ${normalTick} Remote control/access - <b>SSH</b> and <b>(S)FTP</b><br />`;
 
-    moreInfo.cSharp = `- Writing short programs and outputting to console.<br />
-    - Working under Linux with <b>dotnet</b> package: code compiling and execution.<br />`;
+    moreInfo.cSharp = `
+    ${normalTick} Writing short programs and outputting to console.<br />
+     ${normalTick} Working under Linux with <b>dotnet</b> package: code compiling and execution.<br />`;
 
-    moreInfo.linWeb = `- Installing, setting up and running <b>Apache HTTPD</b> web server on  Linux.<br />
-    - <b>HTTPS</b> setup with <b>Let's encrypt</b> and <b>certbot</b> for automatic key updates.<br />
-    - Installing and running <b>MariaDB (MySQL)</b> DB server under Linux.<br />`;
+    moreInfo.linWeb = `
+    ${normalTick} Installing, setting up and running <b>Apache HTTPD</b> web server on  Linux.<br />
+     ${normalTick} <b>HTTPS</b> setup with <b>Let's encrypt</b> and <b>certbot</b> for automatic key updates.<br />
+     ${normalTick} Installing and running <b>MariaDB (MySQL)</b> DB server under Linux.<br />`;
 
-    moreInfo.jsPack = `- Extensive knowledge in <b>JavaScript</b> front-end package for creating dymanic, interactive pages.<br />
-    - Good knowledge of structuring pages with <b>HTML</b><br />
-    - Good knowledge of styling wep pages with <b>CSS</b><br />`;
+    moreInfo.jsPack = `
+    ${normalTick} Extensive knowledge in <b>JavaScript</b> front-end package for creating dymanic, interactive pages.<br />
+     ${normalTick} Good knowledge of structuring pages with <b>HTML</b><br />
+     ${normalTick} Good knowledge of styling wep pages with <b>CSS</b><br />`;
 
     bio = [
       ' I got acquainted with computers back in the distant 2005 -- at that time here in Bulgaria, IRC chat communication was viral.<br />',
