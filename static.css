@@ -34,6 +34,10 @@
   #viewport {
   width: 100%;
   }
+  #sitenav {
+  top: 32px;
+  left: -10%;
+  }
   body {
     font-size: 14px;
   }
