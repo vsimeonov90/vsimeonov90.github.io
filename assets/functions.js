@@ -91,6 +91,12 @@ function getParams() {
     case 'accr':
       printAccr();
       break;
+      case 'todo':
+        printTodo();
+        break;
+        // Tab to edit
+        break;
+      
     default:
       break;
   }
