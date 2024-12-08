@@ -61,8 +61,8 @@ switch (lang) {
 
     main = [
       `Hi there! My name\'s Viktor Simeonov and I\'m a "young" programmer.${n}`,
-        `I present to anyone who might be interested, this little website, which is also kind of my portfolio.`,
-        `This website has the purpose of presenting you with a dynamic and interactive browsing environment, thanks to the integration of JavaScript and CSS, along with HTML.${n}`,
+        `This little website is designed as my portfolio, showcasing what I've learned so far in front-end development.`,
+        `Its purpose is presenting you with a dynamic and interactive browsing environment, thanks to the integration of JavaScript and CSS, along with HTML.${n}`,
       `Although design isn\'t my strong suite, I hope that you remain satisfied with the overall look.${n}`,
       `All documents for this website will be available on GitHub so anyone can take a look at the code.${n}`,
 `The navigation in the website consists of 3 buttons, 2 of which are scripted to send a URL parameter, and then the JS dynamically loads the requested content on the main page. There is 1 drop-down menu, scripted with URL parameters as well, keeping the UI clean and minimal.${n}`,
@@ -150,8 +150,8 @@ switch (lang) {
       `Сайтът има за цел, разглеждайки го, да Ви представи интерактивна и динамична среда, благодарение на интеграцията с JavaScript и CSS.${n}`,
       `Макар и дизайнът да не е силната ми страна, надявам се, съм се постарал страницата да изглежда прилично и общият изглед да Ви хареса.${n}`,
       `Всички документи на сайта ще бъдат достъпни в GitHub заедно с целия програмен код, за да можете да ги разгледате.${n}`,
-`Навигацията в сайта се състои от 3 главни бутона и 1 падащо меню, написани с JavaScript, които правят препратките с URL параметър, освен бутона за език, който е динамичен и променя езика в реално време, без да се налага да презареждате страницата.${n}`,
-`Бутонът за език прави браузъра ви "умен", като запазва Вашият избор в localStorage и така сайтът остава винаги на избрания от Вас език, докато не изчистите историята на браузъра си.`,
+`Навигацията в сайта се състои от 3 главни бутона, 2 от които са интегрирани с URL GET метод и подават параметрите към JavaScript логиката, която зарежда съдържанието динамично вътре в главната страница. Освен бутоните, имаме и 1 падащо меню с GET метод, обединявайки всичко в чист и опростен потребителски интерфейс.${n}`,
+`Бутонът за език уползотворява <b>localStorage</b> метода в JavaScript, запазвайки предпочитанията за език в клиентския браузър и ги запомня до следващото посещение в сайта.`,
     ];
 
     accr = [
