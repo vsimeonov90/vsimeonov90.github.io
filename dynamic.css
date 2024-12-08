@@ -3,7 +3,7 @@
 {
   color: #c4ced1;
   background-color: #091d3a;
-  font-size: 1rem;
+  font-size: 100%;
   font-weight: normal;
   border: 1px solid #091d3a;
   padding: 2px 6px;
@@ -27,7 +27,7 @@ display: none;
 
 {
 background-color: #ffffff;
-font-size: 0.85rem;
+font-size: 85%;
 border: 1px solid #cccccc;
 width: auto;
 color: black;

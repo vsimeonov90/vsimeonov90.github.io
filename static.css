@@ -1,0 +1,49 @@
+@media only screen and (min-width: 691px) {
+  #viewport {
+  width: 80%;
+  }
+  #sidepanel {
+  display:   block;
+  }
+  #menuBtnMobile, #accrBtnMobile, #langLinkMobile {
+  display: none;
+  }
+  #bottompanel {
+  display: none;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+
+  #sidepanel {
+  display:   none;
+  }
+  #bottompanel {
+  display: block;
+  }
+  #menuBtn, #accrBtn, #langLink {
+  display: none;
+  }
+  #menuBtnMobile, #accrBtnMobile, #langLinkMobile {
+  display: inline;
+  font-size: 32px;
+  }
+  #viewport {
+  width: 100%;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: URL('OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Pictograms';
+  src: URL('modernpics.otf') format('opentype');
+}
