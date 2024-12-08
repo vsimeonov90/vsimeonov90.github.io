@@ -81,8 +81,8 @@ switch (lang) {
     ];
 
     contact = [
-      `You can find me on my email address(es):`,
-      `<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a>${n}<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
+      `You can find me on my email address:`,
+      `<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
       `Or, on <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Facebook & Messenger.</a>`
     ];
     
@@ -179,8 +179,8 @@ switch (lang) {
       ];
 
       contact = [
-        `Можете да ме намерите на имейл адрес(и):`,
-        `<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a>${n}<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
+        `Можете да ме намерите на имейл адрес:`,
+        `<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
         `Също така и във <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Фейсбук и Messenger.</a>`
       ];
 
