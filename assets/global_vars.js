@@ -15,6 +15,7 @@ const langLinkMobile = document.getElementById('langLinkMobile');
 const accrBtn = document.getElementById('accrBtn');
 const bottomLinksElement = document.getElementById('bottompanel');
 const sideLinksElement = document.getElementById('sidepanel');
+const todoLink = document.getElementById('todoLink');
 let lang = localStorage.getItem('lang');
 
 let greetMsg = '';

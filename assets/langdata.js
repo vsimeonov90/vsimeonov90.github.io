@@ -80,6 +80,13 @@ switch (lang) {
       `<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a>${n}<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
       `Or, on <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Facebook & Messenger.</a>`
     ];
+    
+    todo = [
+      `- Add a section for publishing questions and recommendations.`,
+      `- Add a news/updates section where I post what updates I've made to the site.`,
+      `- Add realtime date and clock.`,
+      `- Redo skills section for better readability on mobile devices.`
+      ];
     break;
 
   case 'BG':
@@ -165,8 +172,17 @@ switch (lang) {
       `<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a>${n}<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
       `Също така и във <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Фейсбук и Messenger.</a>`
     ];
+    
+    todo = [
+      `- Секция за публикуване на въпроси и съвети.`,
+      `- Секция с новини по новите неща, които добавям към сайта.`,
+      `- Да добавя часовник с реално време и днешна дата към сайта.`,
+      `- Да преработя секцията с уменията за по-четим изглед на мобилни у-ва.`
+      ];
     break;
 
   default:
     break;
 }
+
+todoLink.textContent = 'TODO';

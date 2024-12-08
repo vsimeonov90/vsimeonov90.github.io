@@ -25,6 +25,12 @@ function printBio() {
     roomsElement.innerHTML += `<span>${element}</span><br />`;
   }
 }
+function printTodo() {
+  // Tab to edit
+  roomsElement.innerHTML = `<h3>${todoLink.textContent}</h3>`;
+  for (let element of todo) {
+    roomsElement.innerHTML += `<span>${element}</span>${n}`
+}
 
 function printSkills() {
       roomsElement.innerHTML = `<h3>${skillTitle}</h3>`;
