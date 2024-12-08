@@ -21,8 +21,8 @@ let bioTitle = '';
 let accrTitle = '';
 let headTitle = '';
 
-const p = '<span style="font-family: Pictograms;">';
-const pe = '</span>';
+const p = '<a style="font-family: Pictograms;">';
+const pe = '</a>';
 const arrowTick = `${p}\>${pe}`;
 const normalTick = `${p}%${pe}`;
 menuBtnMobile.innerHTML = `${p}4${pe}`;

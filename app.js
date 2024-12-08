@@ -10,11 +10,14 @@
 
   menuBtn.addEventListener('click', menu);
   accrBtn.addEventListener('click', printAccr);
+  menuBtnMobile.addEventListener('click', menu);
+  accrBtnMobile.addEventListener('click', printAccr);
   accrBtn.addEventListener('mouseenter', hideMenu);
   bioLink.addEventListener('click', printBioHandler);
   skillsLink.addEventListener('click', printSkillsHandler);
   mainLink.addEventListener('click', printMainHandler);
   contactLink.addEventListener('click', printContact);
   langLink.addEventListener('click', langToggle);
+  langLinkMobile.addEventListener('click', langToggle);
   mainElement.addEventListener('click', hideMenu);
   headElement.addEventListener('click', reloadMain);

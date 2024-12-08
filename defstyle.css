@@ -9,6 +9,7 @@
     display: none;
   }
 }
+
 @media only screen and (max-width: 790px) {
   #sidepanel {
   display:   none;
@@ -20,8 +21,11 @@
   display: none;
   }
   #menuBtnMobile, #accrBtnMobile, #langLinkMobile {
-  display: block;
-  font-size: 24px;
+  display: inline;
+  font-size: 32px;
+  }
+  #viewport {
+    width: 100%;
   }
 }
 
