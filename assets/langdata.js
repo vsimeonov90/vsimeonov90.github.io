@@ -64,7 +64,9 @@ switch (lang) {
         `I present to anyone who might be interested, this little website, which is also kind of my portfolio.`,
         `This website has the purpose of presenting you with a dynamic and interactive browsing environment, thanks to the integration of JavaScript and CSS, along with HTML.${n}`,
       `Although design isn\'t my strong suite, I hope that you remain satisfied with the overall look.${n}`,
-      `All documents for this website will be available on GitHub so anyone can take a look at the code.`
+      `All documents for this website will be available on GitHub so anyone can take a look at the code.${n}`,
+`Навигацията в сайта се състои от 3 главни бутона и 1 падащо меню, написани с JavaScript, които правят препратките с URL параметър, освен бутона за език, който е динамичен и променя езика в реално време, без да се налага да презареждате страницата.${n}`,
+`Бутонът за език прави браузъра ви "умен", като запазва Вашият избор в localStorage и така сайтът остава винаги на избрания от Вас език, докато не изчистите историята на браузъра си.`,
     ];
 
     accr = [
@@ -147,7 +149,9 @@ switch (lang) {
       `Представям на Вашето внимание този малък уебсайт, който преставлява фактически и моето портфолио.`,
       `Сайтът има за цел, разглеждайки го, да Ви представи интерактивна и динамична среда, благодарение на интеграцията с JavaScript и CSS.${n}`,
       `Макар и дизайнът да не е силната ми страна, надявам се, съм се постарал страницата да изглежда прилично и общият изглед да Ви хареса.${n}`,
-      `Всички документи на сайта ще бъдат достъпни в GitHub заедно с целия програмен код, за да можете да ги разгледате.`
+      `Всички документи на сайта ще бъдат достъпни в GitHub заедно с целия програмен код, за да можете да ги разгледате.${n}`,
+`Навигацията в сайта се състои от 3 главни бутона и 1 падащо меню, написани с JavaScript, които правят препратките с URL параметър, освен бутона за език, който е динамичен и променя езика в реално време, без да се налага да презареждате страницата.${n}`,
+`Бутонът за език прави браузъра ви "умен", като запазва Вашият избор в localStorage и така сайтът остава винаги на избрания от Вас език, докато не изчистите историята на браузъра си.`,
     ];
 
     accr = [
