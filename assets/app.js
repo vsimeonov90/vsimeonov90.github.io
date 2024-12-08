@@ -6,7 +6,7 @@
   headElement.textContent = `${headTitle}`;
   langLink.textContent  = `${langTitle}`;
 
-  printMain();
+  printArray('main');
 
   menuBtn.addEventListener('click', menu);
   menuBtnMobile.addEventListener('click', menu);
@@ -22,5 +22,5 @@
     sideLinksElement.innerHTML += `${n}<span style="font-size: 80%">2024, Viktor Simeonov</span>`;
     bottomLinksElement.innerHTML = bottomLinks;
     bottomLinksElement.innerHTML += `${n}<span style="font-size: 80%">2024, Viktor Simeonov</span>`;
-
+    setInterval(time, 1000);
   });

@@ -16,6 +16,8 @@ const accrBtn = document.getElementById('accrBtn');
 const bottomLinksElement = document.getElementById('bottompanel');
 const sideLinksElement = document.getElementById('sidepanel');
 const todoLink = document.getElementById('todoLink');
+const timeElement = document.getElementById('timeSpan');
+const timeElementMobile = document.getElementById('timeSpanMobile');
 let lang = localStorage.getItem('lang');
 
 let mainTitle = '';
@@ -29,6 +31,8 @@ const pe = '</span>'; // [p]ictogram [e]nd
 const n = '<br />'; // [n]ewline
 const a = `${p}\>${pe}`; // [a]rrow
 const t = `${p}%${pe}`; // [t]ick
+const timeSpan = `<span id="timeSpan"></span>${n}`;
+const timeSpanMobile = `<span id="timeSpanMobile"></span>${n}`;
 
 menuBtnMobile.innerHTML = `${p}4${pe}`;
 accrBtnMobile.innerHTML = `${p})${pe}`;

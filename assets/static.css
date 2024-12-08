@@ -3,14 +3,14 @@
   width: 80%;
   margin-right: 16px;
   }
-  #sidepanel {
+  #sideLinks {
   display:   block;
   margin-left: 16px;
   }
   #menuBtnMobile, #accrBtnMobile, #langLinkMobile {
   display: none;
   }
-  #bottompanel {
+  #bottomLinks {
   display: none;
   }
   #sitenav {
@@ -31,10 +31,10 @@
 
 @media only screen and (max-width: 690px) {
 
-  #sidepanel {
+  #sideLinks {
   display:   none;
   }
-  #bottompanel {
+  #bottomLinks {
   display: block;
   width: inherit;
   }
