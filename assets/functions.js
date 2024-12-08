@@ -32,7 +32,6 @@ function printArray(which) {
         roomsElement.innerHTML += `<span>${element}</span><br />`;
       }
 
-
       break;
 
     case 'skill':
