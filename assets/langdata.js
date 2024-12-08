@@ -9,7 +9,7 @@ switch (lang) {
     contactLink.textContent = 'Contact';
     langTitle = 'Български';
 
-    greetMsg = 'Welcome';
+    mainTitle = 'Welcome';
     bioTitle = 'The lonesome road of a simple tech enthusiast';
     skillTitle = 'What I may be of use with?';
     accrTitle = 'My academic accomplishments in programming:';
@@ -75,7 +75,7 @@ switch (lang) {
       `<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - by Microsoft and freeCodeCamp`
     ];
 
-    contactInfo = [
+    contact = [
       `You can find me on my email address(es):`,
       `<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a>${n}<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
       `Or, on <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Facebook & Messenger.</a>`
@@ -99,7 +99,7 @@ switch (lang) {
     contactLink.textContent = 'Връзка с мен';
     langTitle = 'English';
 
-    greetMsg = 'Добре дошли!';
+    mainTitle = 'Добре дошли!';
     bioTitle = 'Самотният път на един любител на технологии';
     skillTitle = 'С какво бих могъл да съм полезен към момента?';
     accrTitle = 'Моите академични постижения в програмирането:';
@@ -168,7 +168,7 @@ switch (lang) {
       `<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - от Microsoft и freeCodeCamp`
     ];
 
-    contactInfo = [
+    contact = [
       `Можете да ме намерите на имейл адрес(и):`,
       `<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a>${n}<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
       `Също така и във <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Фейсбук и Messenger.</a>`

@@ -18,7 +18,7 @@ const sideLinksElement = document.getElementById('sidepanel');
 const todoLink = document.getElementById('todoLink');
 let lang = localStorage.getItem('lang');
 
-let greetMsg = '';
+let mainTitle = '';
 let skillTitle = '';
 let bioTitle = '';
 let accrTitle = '';
@@ -51,6 +51,7 @@ let moreInfo = {
 let bio = [];
 let main = [];
 let accr = [];
+let contact = [];
 const links = [
  `<a class="sideLink" href="https://www.udemy.com" target="blank">Udemy</a>`,
 `<a class="sideLink" href="https://www.softuni.bg" target="blank">SoftUni</a>`,
