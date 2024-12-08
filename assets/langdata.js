@@ -187,4 +187,4 @@ switch (lang) {
     break;
 }
 
-todoLink.textContent = 'TODO';
+todoLink.textContent = '// TODO';
