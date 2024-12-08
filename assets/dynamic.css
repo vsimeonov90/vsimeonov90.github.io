@@ -3,10 +3,10 @@
 {
   color: #c4ced1;
   background-color: #091d3a;
-  font-size: 100%;
+  font-size: 90%;
   font-weight: normal;
   border: 1px solid #091d3a;
-  padding: 2px 6px;
+  padding: 0px 6px;
   margin: 0px 4px;
   text-decoration: none;
 }
@@ -37,4 +37,5 @@ width: auto;
 color: black;
 padding: 1rem 1rem;
 display: block;
+line-height: 14px;
 }

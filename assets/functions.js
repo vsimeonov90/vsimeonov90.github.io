@@ -35,6 +35,7 @@ function printArray(which) {
       break;
 
     case 'skill':
+      roomsElement.setAttribute('style','line-height: 24px;');
       title = eval(which + 'Title');
       roomsElement.innerHTML = `<h3>${title}</h3>`;
       for (let element in skillSet) {
@@ -88,3 +89,4 @@ function time() {
     timeElementMobile.textContent = `${d.toLocaleString()}`;
     // console.log(stamp);
 }
+console.log(window.innerWidth);

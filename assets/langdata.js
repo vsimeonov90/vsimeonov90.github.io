@@ -16,15 +16,20 @@ switch (lang) {
     headTitle = 'Viktor Simeonov\'s Demo';
     headSubTitle = 'By Viktor I. Simeonov';
     contactTitle = 'How can you reach me?';
-
-    skillSet.lin = 'Extensive knowledge of Linux work environment.';
-    skillSet.cSharp = 'Basic knowledge in C#';
-    skillSet.linWeb = 'Working with WEB services under Linux.';
-    skillSet.jsPack = 'JavaScript WEB package.';
-
+    if (window.innerWidth >= 691) {
+      skillSet.lin = 'Extensive knowledge of Linux work environment.';
+      skillSet.cSharp = 'Basic knowledge in C#';
+      skillSet.linWeb = 'Working with WEB services under Linux.';
+      skillSet.jsPack = 'JavaScript WEB package.';
+    } else {
+      skillSet.lin = 'Linux work environment.';
+      skillSet.cSharp = 'Basic C# programming';
+      skillSet.linWeb = 'WEB services under Linux.';
+      skillSet.jsPack = 'JavaScript WEB package.';
+    }
     moreInfo.lin =  `${t} Installation and support of Linux-based OS.${n}
     ${t} <b>bash</b> scripting and task automation.${n}
-    ${t} Setting up <b>systemd</b> and <b>runit</b> services.<br  />
+    ${t} Setting up <b>systemd</b> and <b>runit</b> services.${n}
     ${t} Setting up <b>ufw</b>.${n}
     ${t} Setting up <b>samba</b> for local file sharing.${n}
     ${t} Installation and setup of Xorg and DEs/WMs.${n}
@@ -33,17 +38,17 @@ switch (lang) {
 
     moreInfo.cSharp = `
     ${t} Writing short programs and outputting to console.${n}
-     ${t} Working under Linux with <b>dotnet</b> package: code compiling and execution.${n}`;
+    ${t} Working under Linux with <b>dotnet</b> package: code compiling and execution.${n}`;
 
     moreInfo.linWeb = `
     ${t} Installing, setting up and running <b>Apache HTTPD</b> web server on  Linux.${n}
-     ${t} <b>HTTPS</b> setup with <b>Let's encrypt</b> and <b>certbot</b> for automatic key updates.${n}
-     ${t} Installing and running <b>MariaDB (MySQL)</b> DB server under Linux.${n}`;
+    ${t} <b>HTTPS</b> setup with <b>Let's encrypt</b> and <b>certbot</b> for automatic key updates.${n}
+    ${t} Installing and running <b>MariaDB (MySQL)</b> DB server under Linux.${n}`;
 
     moreInfo.jsPack = `
     ${t} Extensive knowledge in <b>JavaScript</b> front-end package for creating dymanic, interactive pages.${n}
-     ${t} Good knowledge of structuring pages with <b>HTML</b>${n}
-     ${t} Good knowledge of styling wep pages with <b>CSS</b>${n}`;
+    ${t} Good knowledge of structuring pages with <b>HTML</b>${n}
+    ${t} Good knowledge of styling wep pages with <b>CSS</b>${n}`;
 
     bio = [
       `I got acquainted with computers back in the distant 2005 -- at that time here in Bulgaria, IRC chat communication was viral.${n}`,
@@ -61,12 +66,12 @@ switch (lang) {
 
     main = [
       `Hi there! My name\'s Viktor Simeonov and I\'m a "young" programmer.${n}`,
-        `This little website is designed as my portfolio, showcasing what I've learned so far in front-end development.`,
-        `Its purpose is presenting you with a dynamic and interactive browsing environment, thanks to the integration of JavaScript and CSS, along with HTML.${n}`,
+      `This little website is designed as my portfolio, showcasing what I've learned so far in front-end development.`,
+      `Its purpose is presenting you with a dynamic and interactive browsing environment, thanks to the integration of JavaScript and CSS, along with HTML.${n}`,
       `Although design isn\'t my strong suite, I hope that you remain satisfied with the overall look.${n}`,
       `All documents for this website will be available on GitHub so anyone can take a look at the code.${n}`,
-`The navigation in the website consists of 3 buttons, 2 of which are scripted to send a URL parameter via GET, and then the JS dynamically loads the requested content on the main page. There is 1 drop-down menu, scripted with URL parameters with the GET method as well, keeping the UI clean and minimal.${n}`,
-`The language button takes advantage of the <b>localStorage</b> method, making your browser remember your preference for  later use.`,
+      `The navigation in the website consists of 3 buttons, 2 of which are scripted to send a URL parameter via GET, and then the JS dynamically loads the requested content on the main page. There is 1 drop-down menu, scripted with URL parameters with the GET method as well, keeping the UI clean and minimal.${n}`,
+      `The language button takes advantage of the <b>localStorage</b> method, making your browser remember your preference for  later use.`,
     ];
 
     accr = [
@@ -86,103 +91,110 @@ switch (lang) {
       `- Add a news/updates section where I post what updates I've made to the site.`,
       `* These features would require some sort of backend to save the public posts. Since GitHub doesn't provide backend frameworks, I'll have to look for a provider online.${n}`,
       `- Redo skills section for better readability on mobile devices.`
+    ];
+    break;
+
+    case 'BG':
+      menuBtn.textContent = 'Портфолио';
+      accrBtn.textContent = 'Акредитации';
+      mainLink.textContent = 'Начало';
+      bioLink.textContent = 'Кой съм?';
+      skillsLink.textContent = 'Умения';
+      contactLink.textContent = 'Връзка с мен';
+      langTitle = 'English';
+
+      mainTitle = 'Добре дошли!';
+      bioTitle = 'Самотният път на един любител на технологии';
+      skillTitle = 'С какво бих могъл да съм полезен към момента?';
+      accrTitle = 'Моите академични постижения в програмирането:';
+      headTitle = 'Демо от Виктор Симеонов';
+      headSubTitle = 'от Виктор И. Симеонов';
+      contactTitle = 'Как да се свържете с мен?';
+
+      if (window.innerWidth >= 691) {
+        skillSet.lin = 'Подробни знания за работата в Linux среда.';
+        skillSet.cSharp = 'Базови познания по C#';
+        skillSet.linWeb = 'Работа с уеб услуги под Linux.';
+        skillSet.jsPack = 'JavaScript front-end пакет.';
+      } else {
+        skillSet.lin = 'Работа в Linux среда.';
+        skillSet.cSharp = 'Базови познания по C#';
+        skillSet.linWeb = 'Уеб услуги под Linux.';
+        skillSet.jsPack = 'JavaScript front-end пакет.';
+      }
+
+      moreInfo.lin = `
+      ${t} Инсталация и поддръжка на Linux-базирани OS.${n}
+      ${t} <b>bash</b> скриптиране и автоматизация на задачи.${n}
+      ${t} Настройване на услуги в <b>systemd</b> и <b>runit</b>.${n}
+      ${t} Настройване на защитна стена <b>ufw</b>.${n}
+      ${t} Настройване на <b>samba</b> локално споделяне на файлове.${n}
+      ${t}  Инсталация и настройване на Xorg и графична среда (DE/WM).${n}
+      ${t} Практически опит с <b>Debian, Voidlinux, Slackware</b>.${n}
+      ${t} Контрол от разстояние - <b>SSH</b> и <b>(S)FTP</b>${n}
+      `;
+
+      moreInfo.cSharp = `
+      ${t} Писане на кратки програми и извеждане към конзолата.${n}
+      ${t} Работа в Linux среда с пакета <b>dotnet</b>: компилация на код и изпълнение.${n}
+      `;
+
+      moreInfo.linWeb = `
+      ${t} Инсталация и пускане в действие на <b>Apache HTTPD</b> уеб сървър под Linux.${n}
+      ${t} <b>HTTPS</b> настройки с <b>Let's encrypt</b> и <b>certbot</b> за автоматично подновяване на ключовете.${n}
+      ${t} Инсталация и пускане в действие на <b>MariaDB (MySQL)</b> сървър за БД под Linux.${n}`;
+
+      moreInfo.jsPack = `
+      ${t} Широки познания по базовия <b>JavaScript</b> пакет за създаване на динамични, интерактивни страници.${n}
+      ${t} Добри познания в структурирането на страници с <b>HTML</b>${n}
+      ${t} Основни познания в стилизирането на изгледа с <b>CSS</b>${n}`;
+
+      bio = [
+        `Запознах се с компютърната техника в далечната 2005-та година, по времето на нашумелия тогава в България, IRC протокол за текстова комуникация (чат).${n}`,
+        `Именно оттам тръгна интересът ми, първо към IRC сървърите и мрежите, после (по стечение на обстоятелствата) и към Linux.${n}`,
+        `Въпреки, че не притежавам академична акредитация за знанията си в Linux работната среда и Linux-базираните операционни системи, смело мога да заявя, че след близо 20 години практика на база „опит-грешка“, както и доста информация, черпена през цялото време от различни източници като <i>StackOverflow, LinuxQuestions, Arch Wiki</i> и много други, си разбирам от работата.${n}`,
+        `Именно на това се дължи и бързото ми навлизане в bash скриптирането и програмирането като цяло (по-задълбочено през последните 2 години).${n}`,
+        `Пътят си в създаването на уеб сайтове започнах още в ранните години, когато все още нямах дори основни понятия за програмиране. Спомням си, че обожавах да си правя статични сайтчета с една програма, наречена Web Page Maker още преди 15+ години.${n}`,
+        `<h3>А сега, да разкажа за обучението си:</h3>`,
+        `През 2009 година, завършвам средното си образование в 97-мо СОУ „Братя Миладинови“, със специалност IT и отличен общ успех.`,
+        `Следващите 3 години, до 2012 г. прекарвам в обучението си по специалност „Безжични комуникации и разпръскване“ във ВУ „Колеж по Телекомуникации и Пощи“, където, заедно с други интересни неща, се запознавам за пръв път и с програмирането.${n}`,
+        `След дълга пауза в тази област, причините за която мога да изброявам дълго, но не го смятам за нужно... през 2024 г. преминавам курса по „Основи на програмирането със С#“, от SoftUni.bg с максимален брой точки.${n}`,
+        `Към момента, продължавам обучението си по програмиране към Advanced, с подробния модул „JavaScript - The Complete Guide (2024) - Beginner to Advanced“ от Udemy.${n}`,
+        `Решен съм твърдо, да продължа работата си с уеб програмирането и да обхвана fullstack разработката на сайтове, а не само front-end програмирането. Тепърва ще започвам да се впускам в back-end програмирането с Node.js и най-различни други фреймуъркове. Имам желание да науча и нови БД (вероятно MongoDB, тъй като вече имам опит с SQL). Желая да поддържам уменията си винаги свежи и в крак с последните тенденции от вселената на програмните езици.`
       ];
-    break;
 
-  case 'BG':
-    menuBtn.textContent = 'Портфолио';
-    accrBtn.textContent = 'Акредитации';
-    mainLink.textContent = 'Начало';
-    bioLink.textContent = 'Кой съм?';
-    skillsLink.textContent = 'Умения';
-    contactLink.textContent = 'Връзка с мен';
-    langTitle = 'English';
-
-    mainTitle = 'Добре дошли!';
-    bioTitle = 'Самотният път на един любител на технологии';
-    skillTitle = 'С какво бих могъл да съм полезен към момента?';
-    accrTitle = 'Моите академични постижения в програмирането:';
-    headTitle = 'Демо от Виктор Симеонов';
-    headSubTitle = 'от Виктор И. Симеонов';
-    contactTitle = 'Как да се свържете с мен?';
-
-    skillSet.lin = 'Подробни знания за работата в Linux среда.';
-    skillSet.cSharp = 'Базови познания по C#';
-    skillSet.linWeb = 'Работа с уеб услуги под Linux.';
-    skillSet.jsPack = 'JavaScript front-end пакет.';
-
-    moreInfo.lin = `
-    ${t} Инсталация и поддръжка на Linux-базирани OS.${n}
-    ${t} <b>bash</b> скриптиране и автоматизация на задачи.${n}
-    ${t} Настройване на услуги в <b>systemd</b> и <b>runit</b>.
-    ${t} Настройване на защитна стена <b>ufw</b>.${n}
-    ${t} Настройване на <b>samba</b> локално споделяне на файлове.${n}
-   ${t}  Инсталация и настройване на Xorg и графична среда (DE/WM).${n}
-    ${t} Практически опит с <b>Debian, Voidlinux, Slackware</b>.${n}
-    ${t} Контрол от разстояние - <b>SSH</b> и <b>(S)FTP</b>${n}
-    `;
-
-    moreInfo.cSharp = `
-    ${t} Писане на кратки програми и извеждане към конзолата.${n}
-    ${t} Работа в Linux среда с пакета <b>dotnet</b>: компилация на код и изпълнение.${n}
-    `;
-
-    moreInfo.linWeb = `
-    ${t} Инсталация и пускане в действие на <b>Apache HTTPD</b> уеб сървър под Linux.${n}
-    ${t} <b>HTTPS</b> настройки с <b>Let's encrypt</b> и <b>certbot</b> за автоматично подновяване на ключовете.${n}
-    ${t} Инсталация и пускане в действие на <b>MariaDB (MySQL)</b> сървър за БД под Linux.${n}`;
-
-    moreInfo.jsPack = `
-    ${t} Широки познания по базовия <b>JavaScript</b> пакет за създаване на динамични, интерактивни страници.${n}
-    ${t} Добри познания в структурирането на страници с <b>HTML</b>${n}
-    ${t} Основни познания в стилизирането на изгледа с <b>CSS</b>${n}`;
-
-    bio = [
-      `Запознах се с компютърната техника в далечната 2005-та година, по времето на нашумелия тогава в България, IRC протокол за текстова комуникация (чат).${n}`,
-      `Именно оттам тръгна интересът ми, първо към IRC сървърите и мрежите, после (по стечение на обстоятелствата) и към Linux.${n}`,
-      `Въпреки, че не притежавам академична акредитация за знанията си в Linux работната среда и Linux-базираните операционни системи, смело мога да заявя, че след близо 20 години практика на база „опит-грешка“, както и доста информация, черпена през цялото време от различни източници като <i>StackOverflow, LinuxQuestions, Arch Wiki</i> и много други, си разбирам от работата.${n}`,
-      `Именно на това се дължи и бързото ми навлизане в bash скриптирането и програмирането като цяло (по-задълбочено през последните 2 години).${n}`,
-      `Пътят си в създаването на уеб сайтове започнах още в ранните години, когато все още нямах дори основни понятия за програмиране. Спомням си, че обожавах да си правя статични сайтчета с една програма, наречена Web Page Maker още преди 15+ години.${n}`,
-      `<h3>А сега, да разкажа за обучението си:</h3>`,
-      `През 2009 година, завършвам средното си образование в 97-мо СОУ „Братя Миладинови“, със специалност IT и отличен общ успех.`,
-      `Следващите 3 години, до 2012 г. прекарвам в обучението си по специалност „Безжични комуникации и разпръскване“ във ВУ „Колеж по Телекомуникации и Пощи“, където, заедно с други интересни неща, се запознавам за пръв път и с програмирането.${n}`,
-      `След дълга пауза в тази област, причините за която мога да изброявам дълго, но не го смятам за нужно... през 2024 г. преминавам курса по „Основи на програмирането със С#“, от SoftUni.bg с максимален брой точки.${n}`,
-      `Към момента, продължавам обучението си по програмиране към Advanced, с подробния модул „JavaScript - The Complete Guide (2024) - Beginner to Advanced“ от Udemy.${n}`,
-      `Решен съм твърдо, да продължа работата си с уеб програмирането и да обхвана fullstack разработката на сайтове, а не само front-end програмирането. Тепърва ще започвам да се впускам в back-end програмирането с Node.js и най-различни други фреймуъркове. Имам желание да науча и нови БД (вероятно MongoDB, тъй като вече имам опит с SQL). Желая да поддържам уменията си винаги свежи и в крак с последните тенденции от вселената на програмните езици.`
-    ];
-
-    main = [
-      `Привет! Казвам се Виктор Симеонов и съм „млад“ програмист!${n}`,
-      `Този малък уебсайт представлява моето портфолио, имайки за цел да покаже професионалното ми ниво във front-end програмирането.`,
-      `Има за за цел, разглеждайки го, да Ви представи интерактивна и динамична среда, благодарение на интеграцията с JavaScript, HTML и CSS.${n}`,
-      `Макар и дизайнът да не е силната ми страна, надявам се, съм се постарал страницата да изглежда прилично и общият изглед да Ви хареса.${n}`,
-      `Всички документи на сайта ще бъдат достъпни в GitHub заедно с целия програмен код, за да можете да ги разгледате.${n}`,
-`Навигацията в сайта се състои от 3 главни бутона, 2 от които са интегрирани с URL GET метод и подават параметрите към JavaScript логиката, която зарежда съдържанието динамично вътре в главната страница. Освен бутоните, имаме и 1 падащо меню с GET метод, обединявайки всичко в чист и опростен потребителски интерфейс.${n}`,
-`Бутонът за език уползотворява <b>localStorage</b> метода в JavaScript, запазвайки предпочитанията за език в клиентския браузър и ги запомня до следващото посещение в сайта.`,
-    ];
-
-    accr = [
-      `Към момента, съм преминал успешно следните акредитирани курсове по програмиране:${n}`,
-      `<a class="pageLink" href="https://softuni.bg/certificates/details/209890/a51ab051" target="_blank">Programming Basics with C#</a> - от SoftUni.bg`,
-      `<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - от Microsoft и freeCodeCamp`
-    ];
-
-    contact = [
-      `Можете да ме намерите на имейл адрес(и):`,
-      `<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a>${n}<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
-      `Също така и във <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Фейсбук и Messenger.</a>`
-    ];
-    
-    todo = [
-      `- Секция за публикуване на въпроси и съвети.`,
-      `- Секция с новини по новите неща, които добавям към сайта.`,
-      `* Тези добавки ще изискват някаква форма на back-end, за да запазват публикациите. GitHub не предоставя backend, затова ще трябва да потърся някой провайдър с backend.${n}`,
-      `- Да преработя секцията с уменията за по-четим изглед на мобилни у-ва.`
+      main = [
+        `Привет! Казвам се Виктор Симеонов и съм „млад“ програмист!${n}`,
+        `Този малък уебсайт представлява моето портфолио, имайки за цел да покаже професионалното ми ниво във front-end програмирането.`,
+        `Има за за цел, разглеждайки го, да Ви представи интерактивна и динамична среда, благодарение на интеграцията с JavaScript, HTML и CSS.${n}`,
+        `Макар и дизайнът да не е силната ми страна, надявам се, съм се постарал страницата да изглежда прилично и общият изглед да Ви хареса.${n}`,
+        `Всички документи на сайта ще бъдат достъпни в GitHub заедно с целия програмен код, за да можете да ги разгледате.${n}`,
+        `Навигацията в сайта се състои от 3 главни бутона, 2 от които са интегрирани с URL GET метод и подават параметрите към JavaScript логиката, която зарежда съдържанието динамично вътре в главната страница. Освен бутоните, имаме и 1 падащо меню с GET метод, обединявайки всичко в чист и опростен потребителски интерфейс.${n}`,
+        `Бутонът за език уползотворява <b>localStorage</b> метода в JavaScript, запазвайки предпочитанията за език в клиентския браузър и ги запомня до следващото посещение в сайта.`,
       ];
-    break;
 
-  default:
-    break;
+      accr = [
+        `Към момента, съм преминал успешно следните акредитирани курсове по програмиране:${n}`,
+        `<a class="pageLink" href="https://softuni.bg/certificates/details/209890/a51ab051" target="_blank">Programming Basics with C#</a> - от SoftUni.bg`,
+        `<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - от Microsoft и freeCodeCamp`
+      ];
+
+      contact = [
+        `Можете да ме намерите на имейл адрес(и):`,
+        `<a class="pageLink" href="mailto:vsimeonov@hotmail.com">vsimeonov@hotmail.com</a>${n}<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
+        `Също така и във <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Фейсбук и Messenger.</a>`
+      ];
+
+      todo = [
+        `- Секция за публикуване на въпроси и съвети.`,
+        `- Секция с новини по новите неща, които добавям към сайта.`,
+        `* Тези добавки ще изискват някаква форма на back-end, за да запазват публикациите. GitHub не предоставя backend, затова ще трябва да потърся някой провайдър с backend.${n}`,
+        `- Да преработя секцията с уменията за по-четим изглед на мобилни у-ва.`
+      ];
+      break;
+
+      default:
+        break;
 }
 
 todoLink.textContent = '// TODO';
