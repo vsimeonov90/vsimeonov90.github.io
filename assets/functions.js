@@ -31,6 +31,7 @@ function printTodo() {
   for (let element of todo) {
     roomsElement.innerHTML += `<span>${element}</span>${n}`
 }
+}
 
 function printSkills() {
       roomsElement.innerHTML = `<h3>${skillTitle}</h3>`;
