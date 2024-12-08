@@ -65,7 +65,7 @@ switch (lang) {
         `Its purpose is presenting you with a dynamic and interactive browsing environment, thanks to the integration of JavaScript and CSS, along with HTML.${n}`,
       `Although design isn\'t my strong suite, I hope that you remain satisfied with the overall look.${n}`,
       `All documents for this website will be available on GitHub so anyone can take a look at the code.${n}`,
-`The navigation in the website consists of 3 buttons, 2 of which are scripted to send a URL parameter, and then the JS dynamically loads the requested content on the main page. There is 1 drop-down menu, scripted with URL parameters as well, keeping the UI clean and minimal.${n}`,
+`The navigation in the website consists of 3 buttons, 2 of which are scripted to send a URL parameter via GET, and then the JS dynamically loads the requested content on the main page. There is 1 drop-down menu, scripted with URL parameters with the GET method as well, keeping the UI clean and minimal.${n}`,
 `The language button takes advantage of the <b>localStorage</b> method, making your browser remember your preference for  later use.`,
     ];
 
