@@ -27,7 +27,7 @@ function printArray(which) {
     case 'contact':
     case 'main':
       title = eval(which + 'Title');
-      roomsElement.innerHTML = `<h3>${title}</h3>`;
+      roomsElement.innerHTML += `<h3>${title}</h3>`;
       for (let element of eval(which)) {
         roomsElement.innerHTML += `<span>${element}</span><br />`;
       }
@@ -37,7 +37,7 @@ function printArray(which) {
     case 'skill':
       roomsElement.setAttribute('style','line-height: 24px;');
       title = eval(which + 'Title');
-      roomsElement.innerHTML = `<h3>${title}</h3>`;
+      roomsElement.innerHTML += `<h3>${title}</h3>`;
       for (let element in skillSet) {
         const elementPop = `${element}Popup`;
         roomsElement.innerHTML += `${a} ${skillSet[element]} <span id="${element}React"><span id="questinMark">?</span>
@@ -48,7 +48,7 @@ function printArray(which) {
 
     case 'todo':
 
-      roomsElement.innerHTML = `<h3>${todoLink.textContent}</h3>`;
+      roomsElement.innerHTML += `<h3>${todoLink.textContent}</h3>`;
       for (let element of todo) {
         roomsElement.innerHTML += `<span>${element}</span>${n}`
       }
