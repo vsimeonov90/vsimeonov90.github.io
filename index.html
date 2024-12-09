@@ -54,8 +54,51 @@
     <span id="timeSpan" style="font-size: 80%;"></span>
   </section>
   <section id="viewport">
-<!--    <form id="qForm">
-    </form>-->
+<form id="questionForm">
+    <input type="text" id="questionInput" placeholder="Ask a question" required />
+    <button type="submit">Submit</button>
+</form>
+<ul id="questionsList"></ul>
+
+<script>
+    const apiBase = 'https://your-vercel-project.vercel.app/api/post-question'; // Replace with your Vercel API URL
+
+    // Submit Question
+    document.getElementById('questionForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const question = document.getElementById('questionInput').value;
+
+        const response = await fetch(apiBase, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ question }),
+        });
+
+        if (response.ok) {
+            alert('Question added!');
+            fetchQuestions(); // Refresh the questions list
+        } else {
+            console.error('Error adding question:', await response.json());
+        }
+    });
+
+    // Fetch and Display Questions
+    async function fetchQuestions() {
+        const response = await fetch(apiBase);
+        const questions = await response.json();
+
+        const list = document.getElementById('questionsList');
+        list.innerHTML = '';
+        questions.forEach((q) => {
+            const li = document.createElement('li');
+            li.textContent = `${q.question} (Asked on: ${new Date(q.date).toLocaleString()})`;
+            list.appendChild(li);
+        });
+    }
+
+    // Load Questions on Page Load
+    fetchQuestions();
+</script>
   </section>
 
 </section>
