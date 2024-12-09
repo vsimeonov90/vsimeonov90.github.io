@@ -16,7 +16,13 @@
   mainElement.addEventListener('click', hideMenu);
   headElement.addEventListener('click', reloadMain);
 
-  document.addEventListener("DOMContentLoaded", (event) => {
+  qFormElement.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const question = document.getElementById('qInput').value;
+   console.log(question);
+  });
+
+  document.addEventListener('DOMContentLoaded', (event) => {
     getParams();
     sideLinksElement.innerHTML = sideLinks;
     sideLinksElement.innerHTML += `${n}<span style="font-size: 80%">2024, Viktor Simeonov</span>`;

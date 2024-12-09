@@ -196,3 +196,4 @@ switch (lang) {
 }
 
 todoLink.textContent = '// TODO';
+qFormLinkElement.textContent = 'Question?';

@@ -54,6 +54,9 @@ function printArray(which) {
       }
 
       break;
+    case 'ask':
+      roomsElement.innerHTML = qFormCode;
+      break;
 
     default: break;
   }
@@ -66,13 +69,13 @@ function menu() {
   }
 }
 
-function getParams() {
+async function getParams() {
   let qString = window.location.search;
-  console.log(qString);
   let urlParams = new URLSearchParams(qString);
   let page = urlParams.get('p');
-  console.log(page);
+  let form = urlParams.get('fv');
   printArray(page);
+  await postQuestion(form);
 }
 
 function formatTime(num){
@@ -80,13 +83,23 @@ function formatTime(num){
 }
 
 function time() {
-    let d = new Date();
-    let s = formatTime(d.getSeconds());
-    let m = formatTime(d.getMinutes());
-    let h = formatTime(d.getHours());
-    let stamp = `${h}:${m}:${s}`;
-    timeElement.textContent = `${d.toLocaleString()}`;
-    timeElementMobile.textContent = `${d.toLocaleString()}`;
-    // console.log(stamp);
+  let d = new Date();
+  let s = formatTime(d.getSeconds());
+  let m = formatTime(d.getMinutes());
+  let h = formatTime(d.getHours());
+  let stamp = `${h}:${m}:${s}`;
+  timeElement.textContent = `${d.toLocaleString()}`;
+  timeElementMobile.textContent = `${d.toLocaleString()}`;
+  // console.log(stamp);
 }
-console.log(window.innerWidth);
+
+async function postQuestion(question) {
+  const response = await fetch('https://git-posts.vercel.app/api/post.js', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question }),
+  });
+  const result = await response.json();
+  console.log(result);
+
+}
