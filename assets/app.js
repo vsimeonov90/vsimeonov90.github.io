@@ -16,11 +16,11 @@
   mainElement.addEventListener('click', hideMenu);
   headElement.addEventListener('click', reloadMain);
 
-  qFormElement.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const question = document.getElementById('qInput').value;
-   console.log(question);
-  });
+  // qFormElement.addEventListener('submit', async (event) => {
+  //   event.preventDefault();
+  //   const question = document.getElementById('qInput').value;
+  //   await postQuestion(question);
+  // });
 
   document.addEventListener('DOMContentLoaded', (event) => {
     getParams();

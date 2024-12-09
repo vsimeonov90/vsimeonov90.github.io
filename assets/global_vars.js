@@ -18,8 +18,8 @@ const sideLinksElement = document.getElementById('sidepanel');
 const todoLink = document.getElementById('todoLink');
 const timeElement = document.getElementById('timeSpan');
 const timeElementMobile = document.getElementById('timeSpanMobile');
-const qFormElement = document.getElementById('qForm');
-const qFormLinkElement = document.getElementById('qLink');
+// const qFormElement = document.getElementById('qForm');
+// const qFormLinkElement = document.getElementById('qLink');
 let lang = localStorage.getItem('lang');
 
 let mainTitle = '';
@@ -35,12 +35,12 @@ const a = `${p}\>${pe}`; // [a]rrow
 const t = `${p}%${pe}`; // [t]ick
 const timeSpan = `<span id="timeSpan"></span>${n}`;
 const timeSpanMobile = `<span id="timeSpanMobile"></span>${n}`;
-const qFormCode = `
-<form id="qForm">
-<input type="text" id="qInput" placeholder="Ask a question" required />
-<button type="Submit">Submit</button>
-</form>
-`;
+// const qFormCode = `
+// <form id="qForm">
+// <input type="text" id="qInput" placeholder="Ask a question" required />
+// <button>Submit</button>
+// </form>
+// `;
 
 menuBtnMobile.innerHTML = `${p}4${pe}`;
 accrBtnMobile.innerHTML = `${p})${pe}`;

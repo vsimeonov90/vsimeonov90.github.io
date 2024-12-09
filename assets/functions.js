@@ -69,13 +69,11 @@ function menu() {
   }
 }
 
-async function getParams() {
+function getParams() {
   let qString = window.location.search;
   let urlParams = new URLSearchParams(qString);
   let page = urlParams.get('p');
-  let form = urlParams.get('fv');
   printArray(page);
-  await postQuestion(form);
 }
 
 function formatTime(num){
@@ -93,13 +91,13 @@ function time() {
   // console.log(stamp);
 }
 
-async function postQuestion(question) {
-  const response = await fetch('https://git-posts.vercel.app/api/post.js', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ question }),
-  });
-  const result = await response.json();
-  console.log(result);
-
-}
+// async function postQuestion(question) {
+//   const response = await fetch('https://git-posts.vercel.app/api/post.js', {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json' },
+//     body: JSON.stringify({ question }),
+//   });
+//   const result = await response.json();
+//   console.log(result);
+//
+// }
