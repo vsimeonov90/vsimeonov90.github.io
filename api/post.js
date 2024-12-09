@@ -1,36 +1,55 @@
-import fs from 'fs';
-import path from 'path';
+import { get, set } from '@vercel/edge-config';
 
-const filePath = path.resolve('./data/questions.json');
+export const config = {
+    runtime: 'edge',
+};
 
-export default async function handler(req, res) {
-    res.setHeader('Access-Control-Allow-Origin', '*'); // Allow all origins
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS'); // Allowed methods
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Allowed headers
+export default async function handler(req) {
+    const headers = {
+        'Access-Control-Allow-Origin': '*', // Allow requests from anywhere
+        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+    };
 
     if (req.method === 'OPTIONS') {
-        return res.status(200).end(); // Handle preflight requests
+        return new Response(null, { status: 200, headers });
     }
 
     try {
         if (req.method === 'POST') {
-            const { question } = req.body;
+            const { question } = await req.json();
             if (!question) {
-                return res.status(400).json({ error: 'Question is required' });
+                return new Response(JSON.stringify({ error: 'Question is required' }), {
+                    status: 400,
+                    headers: { 'Content-Type': 'application/json', ...headers },
+                });
             }
 
-            const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-            data.push({ question, date: new Date().toISOString() });
+            const questions = (await get('questions')) || [];
+            questions.push({ question, date: new Date().toISOString() });
 
-            fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
-            return res.status(200).json({ success: true, message: 'Question added!' });
+            await set('questions', questions);
+
+            return new Response(JSON.stringify({ success: true }), {
+                status: 200,
+                headers: { 'Content-Type': 'application/json', ...headers },
+            });
         } else if (req.method === 'GET') {
-            const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-            return res.status(200).json(data);
+            const questions = (await get('questions')) || [];
+            return new Response(JSON.stringify(questions), {
+                status: 200,
+                headers: { 'Content-Type': 'application/json', ...headers },
+            });
         } else {
-            return res.status(405).json({ error: 'Method not allowed' });
+            return new Response(JSON.stringify({ error: 'Method not allowed' }), {
+                status: 405,
+                headers: { 'Content-Type': 'application/json', ...headers },
+            });
         }
     } catch (error) {
-        return res.status(500).json({ error: 'Server error', details: error.message });
+        return new Response(JSON.stringify({ error: 'Internal Server Error', details: error.message }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json', ...headers },
+        });
     }
 }
