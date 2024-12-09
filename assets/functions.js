@@ -73,7 +73,9 @@ function getParams() {
   let qString = window.location.search;
   let urlParams = new URLSearchParams(qString);
   let page = urlParams.get('p');
-  printArray(page);
+  if (page) {
+    printArray(page);
+  }
 }
 
 function formatTime(num){
