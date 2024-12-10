@@ -73,12 +73,14 @@ let main = [];
 let accr = [];
 let contact = [];
 const links = [
- `<a class="sideLink" href="https://www.udemy.com" target="blank">Udemy</a>`,
+  `<a class="sideLink" href="https://www.render.com" target="blank">Render</a>`,
+`<a class="sideLink" href="https://www.github.com" target="blank">GitHub</a>`,
+`<a class="sideLink" href="https://www.udemy.com" target="blank">Udemy</a>`,
 `<a class="sideLink" href="https://www.softuni.bg" target="blank">SoftUni</a>`,
 `<a class="sideLink" href="https://www.freecodecamp.org" target="blank">freeCodeCamp</a>`,
 `<a class="sideLink" href="https://www.exercism.org" target="blank">Exercism</a>`
 ];
 
-const sideLinks = `${links[0]}${n}${links[1]}${n}${links[2]}${n}${links[3]}`;
-const bottomLinks = `${links[0]} | ${links[1]} | ${links[2]} | ${links[3]}`;
+const sideLinks = `${links[0]}${n}${links[1]}${n}${links[2]}${n}${links[3]}${n}${links[4]}${n}${links[5]}`;
+const bottomLinks = `${links[0]} | ${links[1]} | ${links[2]} | ${links[3]}|${links[4]}|${links[5]}`;
 
