@@ -8,6 +8,17 @@ switch (lang) {
     skillsLink.textContent = 'My skills';
     contactLink.textContent = 'Contact';
     langTitle = 'Български';
+    qFormLinkElement.textContent = 'Write to me';
+    clientEmail = 'Your email goes here.';
+    textFormHolder =`Write your question, recommendation or critic.\nThe site admin will contact you on your email.`;
+    submitText = 'Submit';
+    postTitle = 'Write to me your questions, recommendations or critic.';
+    sentBy = 'Sent by';
+    publishedOn = 'published on';
+    todoLink.textContent = 'Your feed';
+noPosts = 'There are no posts yet.';
+
+
 
     mainTitle = 'Welcome';
     bioTitle = 'The lonesome road of a simple tech enthusiast';
@@ -16,6 +27,8 @@ switch (lang) {
     headTitle = 'Viktor Simeonov\'s Demo';
     headSubTitle = 'By Viktor I. Simeonov';
     contactTitle = 'How can you reach me?';
+
+
     if (window.innerWidth >= 691) {
       skillSet.lin = 'Extensive knowledge of Linux work environment.';
       skillSet.cSharp = 'Basic knowledge in C#';
@@ -100,7 +113,16 @@ switch (lang) {
       bioLink.textContent = 'Кой съм?';
       skillsLink.textContent = 'Умения';
       contactLink.textContent = 'Връзка с мен';
+      qFormLinkElement.textContent = 'Пишете ми';
+      noPosts = 'Все още няма мнения.';
+
+
       langTitle = 'English';
+      clientEmail = 'Вашият имейл.';
+      textFormHolder =`Напишете вашите въпрос, препоръка или критика.\nАдминистраторът ще Ви отговори по имейл.`;
+      submitText = 'Изпрати';
+          postTitle = 'Напишете ми Вашите въпроси, препоръки или критика.';
+
 
       mainTitle = 'Добре дошли!';
       bioTitle = 'Самотният път на един любител на технологии';
@@ -109,6 +131,10 @@ switch (lang) {
       headTitle = 'Демо от Виктор Симеонов';
       headSubTitle = 'от Виктор И. Симеонов';
       contactTitle = 'Как да се свържете с мен?';
+      sentBy = 'Изпратено от';
+      publishedOn = 'публикувано на';
+      todoLink.textContent = 'Мнения';
+
 
       if (window.innerWidth >= 691) {
         skillSet.lin = 'Подробни знания за работата в Linux среда.';
@@ -195,5 +221,3 @@ switch (lang) {
         break;
 }
 
-todoLink.textContent = '// TODO';
-// qFormLinkElement.textContent = 'Question?';

@@ -27,17 +27,18 @@ function printArray(which) {
     case 'contact':
     case 'main':
       title = eval(which + 'Title');
-      roomsElement.innerHTML += `<h3>${title}</h3>`;
+      roomsElement.innerHTML = `<h3>${title}</h3>`;
       for (let element of eval(which)) {
-        roomsElement.innerHTML += `<span>${element}</span><br />`;
+        roomsElement.insertAdjacentHTML('beforeend',`<span>${element}</span><br />`);
       }
+
 
       break;
 
     case 'skill':
       roomsElement.setAttribute('style','line-height: 24px;');
       title = eval(which + 'Title');
-      roomsElement.innerHTML += `<h3>${title}</h3>`;
+      roomsElement.innerHTML = `<h3>${title}</h3>`;
       for (let element in skillSet) {
         const elementPop = `${element}Popup`;
         roomsElement.innerHTML += `${a} ${skillSet[element]} <span id="${element}React"><span id="questinMark">?</span>
@@ -54,8 +55,25 @@ function printArray(which) {
       }
 
       break;
-    case 'ask':
-      roomsElement.innerHTML = qFormCode;
+    case 'post':
+            roomsElement.innerHTML = `<h3>${postTitle}</h3>`;
+          if (window.innerWidth >= 691) {
+      roomsElement.insertAdjacentHTML('beforeend', `  <form id="questionForm">
+      <input type="email" id="posterEmail" placeholder="${clientEmail}" style="width: 25%" required /><br />
+      <textarea id="questionInput" placeholder="${textFormHolder}" style="width: 50%; height: 15rem; resize: none;" required></textarea>
+      <p><button id="formButton" type="submit" style="width: 128px; height:32px; font-size: 110%;">${submitText}</button>
+      </form>`);
+          } else {
+            roomsElement.insertAdjacentHTML('beforeend', `  <form id="questionForm">
+            <input type="email" id="posterEmail" placeholder="${clientEmail}" style="width: 60%" required /><br />
+            <textarea id="questionInput" placeholder="${textFormHolder}" style="width: 100%; height: 15rem; resize: none;" required></textarea>
+            <p><button id="formButton" type="submit" style="width: 128px; height:32px; font-size: 110%;">${submitText}</button>
+            </form>`);
+          }
+      break;
+    case 'viewPosts':
+      roomsElement.innerHTML = '<span id="questionList"></span>';
+      loadQuestions();
       break;
 
     default: break;
@@ -93,13 +111,67 @@ function time() {
   // console.log(stamp);
 }
 
-// async function postQuestion(question) {
-//   const response = await fetch('https://git-posts.vercel.app/api/post.js', {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify({ question }),
-//   });
-//   const result = await response.json();
-//   console.log(result);
-//
-// }
+// Function to post a new question
+async function postQuestion() {
+  const questionInput = document.getElementById('questionInput').value;
+  const emailInput = document.getElementById('posterEmail').value;
+  let d = new Date();
+  let postTime = d.toLocaleString();
+  if (!questionInput) {
+    alert('Please enter a question!');
+    return;
+  }
+
+  try {
+    const response = await fetch(`${backendUrl}/recommendation`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        text: questionInput,
+        email: emailInput,
+        tStamp: postTime,
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to post question');
+    }
+
+    const data = await response.json();
+    alert(`Question added: ${data.question.content}`);
+  } catch (error) {
+    console.error(error);
+    alert('Error adding question!');
+  }
+}
+
+async function loadQuestions() {
+  try {
+    const response = await fetch(`${backendUrl}/recommendation`);
+    // if (!response.ok) {
+    //   throw new Error('Failed to fetch questions');
+    // }
+
+    const data = await response.json();
+    const questionList = document.getElementById('questionList');
+    questionList.innerHTML = ''; // Clear existing questions
+
+    // data.questions.forEach((q) => {
+    //   const li = document.createElement('li');
+    //   li.textContent = q.content;
+    //   questionList.appendChild(li);
+    // });
+    if (data.length < 1) {
+      questionList.innerHTML = `${n}${noPosts}`;
+      return;
+    }
+    for (let element of data) {
+      const mArray = element['sender_mail'].split('@');
+      const user = mArray[0];
+      questionList.innerHTML += `<br /><span style="font-size:70%;">&nbsp;&nbsp;${sentBy}:  <b>${user}</b>, ${publishedOn}: ${element['created_at']}</span><p><div style="width: 100%; min-height: 128px; border: 1px solid #cccccc; padding: 2px 6px; background-color: #ffffff">${element['content']}</div><br />`;
+    }
+  } catch (error) {
+    console.error(error);
+    alert('Error fetching questions!');
+  }
+}

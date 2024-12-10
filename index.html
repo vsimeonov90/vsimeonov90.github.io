@@ -25,9 +25,9 @@
         <a class="menuLink" id="mainLink" href="index.html"></a>
         <a class="menuLink" id="bioLink" href="?p=bio"></a>
         <a class="menuLink" id="skillsLink" href="?p=skill"></a>
-        <a class="menuLink" id="todoLink" href="?p=todo"></a>
+        <a class="menuLink" id="todoLink" href="?p=viewPosts"></a>
         <a class="menuLink" id="contactLink" href="?p=contact"></a>
-<!--        <a class="menuLink" id="qLink" href="?p=ask"></a>-->
+        <a class="menuLink" id="qLink" href="?p=post"></a>
       </div>
     </a>
     <a class="pageLink" id="menuBtnMobile">
@@ -35,9 +35,9 @@
         <a class="menuLink" id="mainLink" href="index.html"></a>
         <a class="menuLink" id="bioLink" href="?p=bio"></a>
         <a class="menuLink" id="skillsLink" href="?p=skill"></a>
-        <a class="menuLink" id="todoLink" href="?p=todo"></a>
+        <a class="menuLink" id="todoLink" href="?p=viewPosts"></a>
         <a class="menuLink" id="contactLink" href="?p=contact"></a>
-<!--        <a class="menuLink" id="qLink" href="?p=ask"></a>-->
+        <a class="menuLink" id="qLink" href="?p=post"></a>
       </div>
     </a>
     &nbsp;
@@ -54,69 +54,9 @@
     <span id="timeSpan" style="font-size: 80%;"></span>
   </section>
   <section id="viewport">
-<form id="questionForm">
-    <input type="text" id="questionInput" placeholder="Ask a question" required />
-    <button type="submit">Submit</button>
-</form>
-<ul id="questionsList"></ul>
-
-<script>
-const backendUrl = 'https://port-viks.onrender.com'; // Replace with your Render backend URL
-
-// Function to post a new question
-async function postQuestion() {
-  const questionInput = document.getElementById('questionInput').value;
-  if (!questionInput) {
-    alert('Please enter a question!');
-    return;
-  }
-
-  try {
-    const response = await fetch(`${backendUrl}/recommendation`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ question: questionInput })
-    });
-
-    if (!response.ok) {
-      throw new Error('Failed to post question');
-    }
-
-    const data = await response.json();
-    alert(`Question added: ${data.question.content}`);
-    loadQuestions(); // Refresh questions
-  } catch (error) {
-    console.error(error);
-    alert('Error adding question!');
-  }
-}
-
-// Function to load all questions
-async function loadQuestions() {
-  try {
-    const response = await fetch(`${backendUrl}/recommendation`);
-    if (!response.ok) {
-      throw new Error('Failed to fetch questions');
-    }
-
-    const data = await response.json();
-    const questionList = document.getElementById('questionList');
-    questionList.innerHTML = ''; // Clear existing questions
-
-    data.questions.forEach((q) => {
-      const li = document.createElement('li');
-      li.textContent = q.content;
-      questionList.appendChild(li);
-    });
-  } catch (error) {
-    console.error(error);
-    alert('Error fetching questions!');
-  }
-}
-
-// Load questions when the page loads
-window.onload = loadQuestions;
-</script>
+  <form id="questionForm">
+  </form>
+  <span id="questionList"></span>
   </section>
 
 </section>

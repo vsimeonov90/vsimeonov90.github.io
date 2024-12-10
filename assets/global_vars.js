@@ -18,8 +18,9 @@ const sideLinksElement = document.getElementById('sidepanel');
 const todoLink = document.getElementById('todoLink');
 const timeElement = document.getElementById('timeSpan');
 const timeElementMobile = document.getElementById('timeSpanMobile');
-// const qFormElement = document.getElementById('qForm');
-// const qFormLinkElement = document.getElementById('qLink');
+const qFormElement = document.getElementById('questionForm');
+const qFormLinkElement = document.getElementById('qLink');
+const backendUrl = 'http://localhost:3000'; // Replace with your Render backend URL
 let lang = localStorage.getItem('lang');
 
 let mainTitle = '';
@@ -27,6 +28,13 @@ let skillTitle = '';
 let bioTitle = '';
 let accrTitle = '';
 let headTitle = '';
+let clientEmail = '';
+let textFormHolder = '';
+let submitText = '';
+let postTitle = '';
+let sentBy = '';
+let publishedOn = '';
+let noPosts = '';
 
 const p = '<span style="font-family: Pictograms;">'; // [p]ictogram
 const pe = '</span>'; // [p]ictogram [e]nd

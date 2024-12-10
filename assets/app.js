@@ -16,17 +16,18 @@
   mainElement.addEventListener('click', hideMenu);
   headElement.addEventListener('click', reloadMain);
 
-  // qFormElement.addEventListener('submit', async (event) => {
-  //   event.preventDefault();
-  //   const question = document.getElementById('qInput').value;
-  //   await postQuestion(question);
-  // });
+  qFormElement.addEventListener("submit",  async (event) => {
+    event.preventDefault();
+    await postQuestion();
+  });
 
   document.addEventListener('DOMContentLoaded', (event) => {
     getParams();
+   //  loadQuestions();
     sideLinksElement.innerHTML = sideLinks;
     sideLinksElement.innerHTML += `${n}<span style="font-size: 80%">2024, Viktor Simeonov</span>`;
     bottomLinksElement.innerHTML = bottomLinks;
     bottomLinksElement.innerHTML += `${n}<span style="font-size: 80%">2024, Viktor Simeonov</span>`;
     setInterval(time, 1000);
   });
+
