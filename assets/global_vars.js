@@ -20,7 +20,7 @@ const timeElement = document.getElementById('timeSpan');
 const timeElementMobile = document.getElementById('timeSpanMobile');
 const qFormElement = document.getElementById('questionForm');
 const qFormLinkElement = document.getElementById('qLink');
-const backendUrl = 'http://localhost:3000'; // Replace with your Render backend URL
+const backendUrl = 'https://port-viks.onrender.com'; // Replace with your Render backend URL
 let lang = localStorage.getItem('lang');
 
 let mainTitle = '';
