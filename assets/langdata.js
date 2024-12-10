@@ -96,7 +96,8 @@ noPosts = 'There are no posts yet.';
     contact = [
       `You can find me on my email address:`,
       `<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
-      `Or, on <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Facebook & Messenger.</a>`
+      `Or, on <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Facebook & Messenger.</a>`,
+      `If you'd like to leave feedback on this site, please feel free to <a class="pageLink" href="${qFormLinkElement}">${qFormLinkElement.textContent}</a>.`
     ];
     
     todo = [
@@ -207,7 +208,9 @@ noPosts = 'There are no posts yet.';
       contact = [
         `Можете да ме намерите на имейл адрес:`,
         `<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
-        `Също така и във <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Фейсбук и Messenger.</a>`
+        `Също така и във <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Фейсбук и Messenger.</a>`,
+        `Ако искате да оставите обратна връзка на страницата, моля <a class="pageLink" href="${qFormLinkElement}">${qFormLinkElement.textContent}</a>.`
+
       ];
 
       todo = [
