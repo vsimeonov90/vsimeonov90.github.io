@@ -23,18 +23,20 @@ const qFormLinkElement = document.getElementById('qLink');
 const backendUrl = 'https://port-viks.onrender.com'; // Replace with your Render backend URL
 let lang = localStorage.getItem('lang');
 
-let mainTitle = '';
-let skillTitle = '';
-let bioTitle = '';
-let accrTitle = '';
-let headTitle = '';
-let clientEmail = '';
-let textFormHolder = '';
-let submitText = '';
-let postTitle = '';
-let sentBy = '';
-let publishedOn = '';
-let noPosts = '';
+let mainTitle;
+let skillTitle;
+let bioTitle;
+let accrTitle;
+let headTitle;
+let clientEmail;
+let textFormHolder;
+let submitText;
+let postTitle;
+let sentBy;
+let publishedOn;
+let noPosts;
+let plsWait;
+let fetchQuestionsFail;
 
 const p = '<span style="font-family: Pictograms;">'; // [p]ictogram
 const pe = '</span>'; // [p]ictogram [e]nd

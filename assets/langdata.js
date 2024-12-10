@@ -17,6 +17,9 @@ switch (lang) {
     publishedOn = 'published on';
     todoLink.textContent = 'Your feed';
 noPosts = 'There are no posts yet.';
+plsWait = 'Render service busy; please wait! Do not refresh.';
+fetchQuestionsFail = 'Render service failure. Back-end possibly offline. Try again later.';
+
 
 
 
@@ -116,6 +119,9 @@ noPosts = 'There are no posts yet.';
       contactLink.textContent = 'Връзка с мен';
       qFormLinkElement.textContent = 'Пишете ми';
       noPosts = 'Все още няма мнения.';
+      plsWait = 'Услугата Render в момента е натоварена; моля, изчакайте. Не опреснявайте.';
+      fetchQuestionsFail = 'Услугата Render се провали. Възможно е back-end сървъра да е офлайн. Опитайте по-късно.';
+
 
 
       langTitle = 'English';

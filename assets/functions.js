@@ -146,6 +146,7 @@ async function postQuestion() {
 }
 
 async function loadQuestions() {
+  questionList.innerHTML = `${n}${plsWait}`;
   try {
     const response = await fetch(`${backendUrl}/recommendation`);
     // if (!response.ok) {
@@ -172,6 +173,6 @@ async function loadQuestions() {
     }
   } catch (error) {
     console.error(error);
-    alert('Error fetching questions!');
+    questionList.innerHTML = `${fetchQuestionsFail}`;
   }
 }
