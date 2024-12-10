@@ -82,5 +82,5 @@ const links = [
 ];
 
 const sideLinks = `${links[0]}${n}${links[1]}${n}${links[2]}${n}${links[3]}${n}${links[4]}${n}${links[5]}`;
-const bottomLinks = `${links[0]} | ${links[1]} | ${links[2]} | ${links[3]}|${links[4]}|${links[5]}`;
+const bottomLinks = `${links[0]} | ${links[1]} | ${links[2]} | ${links[3]} | ${links[4]} | ${links[5]}`;
 
