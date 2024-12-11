@@ -55,6 +55,8 @@ padding: 6px 0px;
 #main
 {
   display: flex;
+  background: url(../bg1.jpg) no-repeat;
+  background-size: cover;
   justify-content: center;
   flex-direction: row;
   width: inherit;
@@ -63,7 +65,7 @@ padding: 6px 0px;
 #viewport
 {
   display: block;
-  background-color: #f2f2f2;
+ /* background-color: #f2f2f2; */
   height:  inherit;
   padding-top: 0rem;
   padding-left: 2rem; padding-right: 2rem; padding-bottom: 2rem;
@@ -72,8 +74,20 @@ padding: 6px 0px;
   font-size: 95%;
 
 }
+
+#textcontent {
+margin: 24px 0px;
+padding: 24px 24px;
+background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #cccccc;
+}
+#text {
+  opacity: 1;
+  position: absolute;
+}
 #sideLinks
 {
+  opacity: 0.6;
   background-color: white;
   border-top: 1px solid #cccccc;
   border-right: 1px solid #cccccc;

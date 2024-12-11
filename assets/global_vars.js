@@ -1,7 +1,7 @@
 const headElement = document.getElementById('headerBanner');
 const headMain = document.getElementById('header');
 const mainElement = document.getElementById('main');
-const roomsElement = document.getElementById('viewport');
+const roomsElement = document.getElementById('textcontent');
 const menuElement = document.getElementById('sitenav');
 const menuBtn = document.getElementById('menuBtn');
 const menuBtnMobile = document.getElementById('menuBtnMobile');
@@ -21,22 +21,22 @@ const timeElementMobile = document.getElementById('timeSpanMobile');
 const qFormElement = document.getElementById('questionForm');
 const qFormLinkElement = document.getElementById('qLink');
 const backendUrl = 'https://port-viks.onrender.com'; // Replace with your Render backend URL
-let lang = localStorage.getItem('lang');
+var lang = localStorage.getItem('lang');
 
-let mainTitle;
-let skillTitle;
-let bioTitle;
-let accrTitle;
-let headTitle;
-let clientEmail;
-let textFormHolder;
-let submitText;
-let postTitle;
-let sentBy;
-let publishedOn;
-let noPosts;
-let plsWait;
-let fetchQuestionsFail;
+var homeTitle;
+var skillTitle;
+var bioTitle;
+var accrTitle;
+var headTitle;
+var clientEmail;
+var textFormHolder;
+var submitText;
+var postTitle;
+var sentBy;
+var publishedOn;
+var noPosts;
+var plsWait;
+var fetchQuestionsFail;
 
 const p = '<span style="font-family: Pictograms;">'; // [p]ictogram
 const pe = '</span>'; // [p]ictogram [e]nd
@@ -56,24 +56,24 @@ menuBtnMobile.innerHTML = `${p}4${pe}`;
 accrBtnMobile.innerHTML = `${p})${pe}`;
 langLinkMobile.innerHTML = `${p}w${pe}`;
 
-let skillSet = {
+const skillSet = {
   lin: '',
   cSharp: '',
   linWeb: '',
   jsPack: ''
 };
 
-let moreInfo = {
+const moreInfo = {
   lin: '',
   cSharp: '',
   linWeb: '',
   jsPack: ''
 };
 
-let bio = [];
-let main = [];
-let accr = [];
-let contact = [];
+const bio = [];
+const home = [];
+const accr = [];
+const contact = [];
 const links = [
   `<a class="sideLink" href="https://www.render.com" target="blank">Render</a>`,
 `<a class="sideLink" href="https://www.github.com" target="blank">GitHub</a>`,

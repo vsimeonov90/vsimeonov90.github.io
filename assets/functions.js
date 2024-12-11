@@ -25,13 +25,13 @@ function printArray(which) {
     case 'bio':
     case 'accr':
     case 'contact':
-    case 'main':
+    case 'home':
       title = eval(which + 'Title');
       roomsElement.innerHTML = `<h3>${title}</h3>`;
       for (let element of eval(which)) {
         roomsElement.insertAdjacentHTML('beforeend',`<span>${element}</span><br />`);
       }
-
+      eval(which).length = 0;
 
       break;
 
@@ -43,6 +43,8 @@ function printArray(which) {
         const elementPop = `${element}Popup`;
         roomsElement.innerHTML += `${a} ${skillSet[element]} <span id="${element}React"><span id="questinMark">?</span>
         <span id="${elementPop}">${moreInfo[element]}</span><br /></span>`;
+        delete skillSet[element];
+        delete moreInfo[element];
       }
 
       break;
@@ -93,19 +95,13 @@ function getParams() {
   let page = urlParams.get('p');
   if (page) {
     printArray(page);
+  } else {
+    printArray('home');
   }
-}
-
-function formatTime(num){
-  return num < 10 ? '0' + num: num;
 }
 
 function time() {
   let d = new Date();
-  let s = formatTime(d.getSeconds());
-  let m = formatTime(d.getMinutes());
-  let h = formatTime(d.getHours());
-  let stamp = `${h}:${m}:${s}`;
   timeElement.textContent = `${d.toLocaleString()}`;
   timeElementMobile.textContent = `${d.toLocaleString()}`;
   // console.log(stamp);

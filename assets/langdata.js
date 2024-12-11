@@ -23,7 +23,7 @@ fetchQuestionsFail = 'Render service failure. Back-end possibly offline. Try aga
 
 
 
-    mainTitle = 'Welcome';
+    homeTitle = 'Welcome';
     bioTitle = 'The lonesome road of a simple tech enthusiast';
     skillTitle = 'What I may be of use with?';
     accrTitle = 'My academic accomplishments in programming:';
@@ -66,7 +66,7 @@ fetchQuestionsFail = 'Render service failure. Back-end possibly offline. Try aga
     ${t} Good knowledge of structuring pages with <b>HTML</b>${n}
     ${t} Good knowledge of styling wep pages with <b>CSS</b>${n}`;
 
-    bio = [
+bio.push(
       `I got acquainted with computers back in the distant 2005 -- at that time here in Bulgaria, IRC chat communication was viral.${n}`,
       `From there on out, my interest got sparkled, first for IRC servers and networks, and later(one leading to the other), in Linux-based OS.${n}`,
       `Although I don\'t have any academic accreditation for my knowledge in Linux working environment, I can honestly declare that after nearly 20 years of practical experience based on trial and error, as well as large quantities of information, derived from various sources throughout those years, such as <i>StackOverflow, LinuxQuestions, Arch Wiki</i> and many others, I do know my trade.${n}`,
@@ -78,9 +78,9 @@ fetchQuestionsFail = 'Render service failure. Back-end possibly offline. Try aga
       `After that, a long pause in this career. I had my reasons, but the details of this long interruption are irrelevant now. In 2024, I passed SoftUni.bg\'s "Programming Basics with C#" course with max score.${n}`,
       `As of now, I am actively learning and continuing my programming to Advanced modules. I am taking advanced JavaScript courses in Udemy as I write this bio, and this website was done using a lot of the information from these courses actually.${n}`,
       `I am determined to continue working in the field of fullstack development, as I have yet to learn back-end programming in JS(Node.js and other various frameworks), and new databases(mainly MongoDB, as I already have a little experience working with SQL). I plan on keeping my skills always fresh and top-tier for the future, in the ever-evolving world of programming.`
-    ];
+    );
 
-    main = [
+   home.push(
       `Hi there! My name\'s Viktor Simeonov and I\'m a "young" programmer.${n}`,
       `This little website is designed as my portfolio, showcasing what I've learned so far in front-end development.`,
       `Its purpose is presenting you with a dynamic and interactive browsing environment, thanks to the integration of JavaScript and CSS, along with HTML.${n}`,
@@ -88,26 +88,26 @@ fetchQuestionsFail = 'Render service failure. Back-end possibly offline. Try aga
       `All documents for this website will be available on GitHub so anyone can take a look at the code.${n}`,
       `The navigation in the website consists of 3 buttons, 2 of which are scripted to send a URL parameter via GET, and then the JS dynamically loads the requested content on the main page. There is 1 drop-down menu, scripted with URL parameters with the GET method as well, keeping the UI clean and minimal.${n}`,
       `The language button takes advantage of the <b>localStorage</b> method, making your browser remember your preference for  later use.`,
-    ];
+    );
 
-    accr = [
+   accr.push(
       `As of now, I have successfully completed the following accredited online courses in programming:${n}`,
       `<a class="pageLink" href="https://softuni.bg/certificates/details/209890/a51ab051" target="_blank">Programming Basics with C#</a> - by SoftUni.bg`,
       `<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - by Microsoft and freeCodeCamp`
-    ];
+    );
 
-    contact = [
+   contact.push(
       `You can find me on my email address:`,
       `<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
       `Or, on <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Facebook & Messenger.</a>`,
       `If you'd like to leave feedback on this site, please feel free to <a class="pageLink" href="${qFormLinkElement}">${qFormLinkElement.textContent}</a>.`
-    ];
+    );
     
-    todo = [
-      `- Add a section for publishing questions and recommendations.`,
-      `- Add a news/updates section where I post what updates I've made to the site.`,
-      `* These features would require some sort of backend to save the public posts. Since GitHub doesn't provide backend frameworks, I'll have to look for a provider online.${n}`
-    ];
+    // todo = [
+    //   `- Add a section for publishing questions and recommendations.`,
+    //   `- Add a news/updates section where I post what updates I've made to the site.`,
+    //   `* These features would require some sort of backend to save the public posts. Since GitHub doesn't provide backend frameworks, I'll have to look for a provider online.${n}`
+    // );
     break;
 
     case 'BG':
@@ -131,7 +131,7 @@ fetchQuestionsFail = 'Render service failure. Back-end possibly offline. Try aga
           postTitle = 'Напишете ми Вашите въпроси, препоръки или критика.';
 
 
-      mainTitle = 'Добре дошли!';
+      homeTitle = 'Добре дошли!';
       bioTitle = 'Самотният път на един любител на технологии';
       skillTitle = 'С какво бих могъл да съм полезен към момента?';
       accrTitle = 'Моите академични постижения в програмирането:';
@@ -181,7 +181,7 @@ fetchQuestionsFail = 'Render service failure. Back-end possibly offline. Try aga
       ${t} Добри познания в структурирането на страници с <b>HTML</b>${n}
       ${t} Основни познания в стилизирането на изгледа с <b>CSS</b>${n}`;
 
-      bio = [
+  bio.push(
         `Запознах се с компютърната техника в далечната 2005-та година, по времето на нашумелия тогава в България, IRC протокол за текстова комуникация (чат).${n}`,
         `Именно оттам тръгна интересът ми, първо към IRC сървърите и мрежите, после (по стечение на обстоятелствата) и към Linux.${n}`,
         `Въпреки, че не притежавам академична акредитация за знанията си в Linux работната среда и Linux-базираните операционни системи, смело мога да заявя, че след близо 20 години практика на база „опит-грешка“, както и доста информация, черпена през цялото време от различни източници като <i>StackOverflow, LinuxQuestions, Arch Wiki</i> и много други, си разбирам от работата.${n}`,
@@ -193,9 +193,9 @@ fetchQuestionsFail = 'Render service failure. Back-end possibly offline. Try aga
         `След дълга пауза в тази област, причините за която мога да изброявам дълго, но не го смятам за нужно... през 2024 г. преминавам курса по „Основи на програмирането със С#“, от SoftUni.bg с максимален брой точки.${n}`,
         `Към момента, продължавам обучението си по програмиране към Advanced, с подробния модул „JavaScript - The Complete Guide (2024) - Beginner to Advanced“ от Udemy.${n}`,
         `Решен съм твърдо, да продължа работата си с уеб програмирането и да обхвана fullstack разработката на сайтове, а не само front-end програмирането. Тепърва ще започвам да се впускам в back-end програмирането с Node.js и най-различни други фреймуъркове. Имам желание да науча и нови БД (вероятно MongoDB, тъй като вече имам опит с SQL). Желая да поддържам уменията си винаги свежи и в крак с последните тенденции от вселената на програмните езици.`
-      ];
+      );
 
-      main = [
+     home.push(
         `Привет! Казвам се Виктор Симеонов и съм „млад“ програмист!${n}`,
         `Този малък уебсайт представлява моето портфолио, имайки за цел да покаже професионалното ми ниво във front-end програмирането.`,
         `Има за за цел, разглеждайки го, да Ви представи интерактивна и динамична среда, благодарение на интеграцията с JavaScript, HTML и CSS.${n}`,
@@ -203,27 +203,26 @@ fetchQuestionsFail = 'Render service failure. Back-end possibly offline. Try aga
         `Всички документи на сайта ще бъдат достъпни в GitHub заедно с целия програмен код, за да можете да ги разгледате.${n}`,
         `Навигацията в сайта се състои от 3 главни бутона, 2 от които са интегрирани с URL GET метод и подават параметрите към JavaScript логиката, която зарежда съдържанието динамично вътре в главната страница. Освен бутоните, имаме и 1 падащо меню с GET метод, обединявайки всичко в чист и опростен потребителски интерфейс.${n}`,
         `Бутонът за език уползотворява <b>localStorage</b> метода в JavaScript, запазвайки предпочитанията за език в клиентския браузър и ги запомня до следващото посещение в сайта.`,
-      ];
+      );
 
-      accr = [
+     accr.push(
         `Към момента, съм преминал успешно следните акредитирани курсове по програмиране:${n}`,
         `<a class="pageLink" href="https://softuni.bg/certificates/details/209890/a51ab051" target="_blank">Programming Basics with C#</a> - от SoftUni.bg`,
         `<a class="pageLink" href="https://www.freecodecamp.org/certification/vsimeonov/foundational-c-sharp-with-microsoft" target="_blank">Foundational C#</a> - от Microsoft и freeCodeCamp`
-      ];
+      );
 
-      contact = [
+      contact.push(
         `Можете да ме намерите на имейл адрес:`,
         `<a class="pageLink" href="mailto:v.simeonov@aol.com">v.simeonov@aol.com</a>${n}`,
         `Също така и във <a class="pageLink" href="https://www.facebook.com/vsimeonov90" target="_blank">Фейсбук и Messenger.</a>`,
         `Ако искате да оставите обратна връзка на страницата, моля <a class="pageLink" href="${qFormLinkElement}">${qFormLinkElement.textContent}</a>.`
+      );
 
-      ];
-
-      todo = [
-        `- Секция за публикуване на въпроси и съвети.`,
-        `- Секция с новини по новите неща, които добавям към сайта.`,
-        `* Тези добавки ще изискват някаква форма на back-end, за да запазват публикациите. GitHub не предоставя backend, затова ще трябва да потърся някой провайдър с backend.${n}`
-      ];
+      // todo = [
+      //   `- Секция за публикуване на въпроси и съвети.`,
+      //   `- Секция с новини по новите неща, които добавям към сайта.`,
+      //   `* Тези добавки ще изискват някаква форма на back-end, за да запазват публикациите. GitHub не предоставя backend, затова ще трябва да потърся някой провайдър с backend.${n}`
+      // );
       break;
 
       default:
